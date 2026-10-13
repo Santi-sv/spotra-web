@@ -1,6 +1,0 @@
-/* Modo buscadores (13/10/2026): boot.js agrega html.seo-mode solo para robots (Google, Bing...).
-   Ven la web completa en una página normal que scrollea, sin bienvenida ni SPOTRI animado. */
-html.seo-mode,html.seo-mode body{height:auto!important;overflow:visible!important}
-html.seo-mode #site-shell,html.seo-mode #site-shell[hidden]{display:block!important;height:auto!important;overflow:visible!important}
-html.seo-mode #welcome,html.seo-mode #spotri-guide{display:none!important}
-html.seo-mode [data-mobile-scene]{visibility:visible!important}
