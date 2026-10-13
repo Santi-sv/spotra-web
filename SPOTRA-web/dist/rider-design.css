@@ -73,7 +73,7 @@
 .welcome-stage{max-width:1240px;grid-template-columns:1fr 1.08fr;gap:clamp(24px,4vw,64px)}
 .welcome-character{height:min(680px,76dvh);max-height:none;min-height:0}
 .welcome-tag{font-size:11px;padding:8px 16px;box-shadow:3px 3px 0 #070907}
-.welcome-copy h1{font-size:clamp(46px,5.2vw,72px);letter-spacing:-.025em;margin:14px 0;line-height:1}
+.welcome-copy h2{font-size:clamp(46px,5.2vw,72px);letter-spacing:-.025em;margin:14px 0;line-height:1}
 .welcome-copy>.eyebrow{font-size:12px}.welcome-intro{font-size:16px;line-height:1.5;margin:12px 0 18px}
 .welcome-instruction{margin:18px 0 10px;font-size:12px}
 .welcome-languages{gap:12px;padding:3px;grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -101,7 +101,7 @@
 @media(min-width:701px) and (max-height:740px){
  .header{height:82px}.hero{padding-top:98px;gap:18px}.hero h1{margin:18px 0;font-size:clamp(34px,min(6.2vw,8.6dvh),70px)}
  .hero-bottom p{font-size:15px}.hero-buttons{margin-top:16px}.hero .button{min-height:48px;padding:12px 22px}
- .welcome{padding-top:18px;padding-bottom:16px}.welcome-character{height:76dvh}.welcome-copy h1{font-size:52px;margin:10px 0}
+ .welcome{padding-top:18px;padding-bottom:16px}.welcome-character{height:76dvh}.welcome-copy h2{font-size:52px;margin:10px 0}
  .welcome-intro{font-size:14px;margin:10px 0}.welcome-instruction{margin-top:12px}.welcome-languages>button{min-height:68px;padding:8px 10px}
  .welcome-rides{margin:14px 0 8px}.ride-option{min-height:100px}.gear-preview{height:68px}.welcome-enter{min-height:82px}.welcome-bottom{margin-top:8px}
  .chapter-heading>.spotri-dock{width:44px}.chapter-heading{margin-bottom:10px}.feature-lines{margin:16px 0}.feature-lines li{padding:7px 0}
@@ -139,13 +139,13 @@
  .footer{gap:42px;justify-content:center}.footer-main{gap:30px 18px}.footer-main>div{min-width:0}.footer-bottom{gap:18px;padding-top:24px}.footer-main a{font-size:12px;overflow-wrap:anywhere}
  .welcome{padding:18px 20px}.welcome-brand img{width:120px}.welcome-brand>span{font-size:8px;max-width:146px;letter-spacing:.07em;line-height:1.6}
  .welcome-stage{max-width:440px;grid-template-columns:1fr;gap:0;flex:none}.welcome-character{height:208px;margin:12px 0 8px}.welcome-spotri-anchor{height:calc(100% - 24px)}.welcome-tag{padding:5px 12px;font-size:9px}
- .welcome-copy>.eyebrow{font-size:10px;margin:10px 0}.welcome-copy h1{font-size:36px;margin:10px 0;line-height:1.08}.welcome-copy h1 br{display:none}.welcome-copy h1>span{margin-left:6px}.welcome-intro{font-size:14px;margin:10px 0 14px}.welcome-instruction{font-size:11px;margin:14px 0 9px}
+ .welcome-copy>.eyebrow{font-size:10px;margin:10px 0}.welcome-copy h2{font-size:36px;margin:10px 0;line-height:1.08}.welcome-copy h2 br{display:none}.welcome-copy h2>span{margin-left:0}.welcome-intro{font-size:14px;margin:10px 0 14px}.welcome-instruction{font-size:11px;margin:14px 0 9px}
  .welcome-languages{gap:9px;padding:3px}.welcome-languages>button{padding:8px 7px;min-height:76px;border-width:2px}.welcome-languages>button>span:first-child{font-size:18px}.welcome-languages>button>span:nth-child(2){font-size:10px}.welcome-languages small{font-size:8px}
  .welcome-rides{margin:18px 0 8px}.welcome-rides legend{font-size:11px}.ride-options{gap:8px}.ride-option{min-height:91px;font-size:11px;padding:5px 2px 8px}.gear-preview{width:64px;height:64px}.welcome-enter{min-height:72px;font-size:14px;padding:16px 45px;aspect-ratio:4.4}.welcome-ride-note{font-size:10px;line-height:1.5;margin:5px 0 0}.welcome-bottom{margin-top:20px}.welcome-bottom>span{font-size:8px;max-width:140px}.welcome-bottom button{font-size:10px;padding:8px 10px}
  .welcome::before{opacity:.5;background-position:36% top}.welcome::after{background:linear-gradient(0deg,#070907f5,#070907dd 64%,#07090765)}
 }
-@media(max-width:360px){.header{padding-inline:14px}.header .brand img{width:94px!important}.header-actions{gap:5px}.hero h1{font-size:28px}.welcome{padding-inline:16px}.welcome-character{height:174px}.welcome-copy h1{font-size:31px}.welcome-brand img{width:108px}.welcome-brand>span{max-width:132px}.ride-options{gap:5px}.gear-preview{width:58px;height:58px}.welcome-enter{min-height:67px}.product-heading{gap:8px}.product-nav{gap:14px}.motion-control button{font-size:9px}.product-scene .product-device{width:min(248px,78vw)}}
-@media(max-width:700px) and (max-height:680px){.hero{padding-top:94px;gap:18px}.hero h1{margin:26px 0 20px}.hero-buttons{margin-top:18px}.welcome-character{height:170px}.welcome-copy h1{font-size:31px}.welcome-bottom{margin-top:16px}}
+@media(max-width:360px){.header{padding-inline:14px}.header .brand img{width:94px!important}.header-actions{gap:5px}.hero h1{font-size:28px}.welcome{padding-inline:16px}.welcome-character{height:174px}.welcome-copy h2{font-size:31px}.welcome-brand img{width:108px}.welcome-brand>span{max-width:132px}.ride-options{gap:5px}.gear-preview{width:58px;height:58px}.welcome-enter{min-height:67px}.product-heading{gap:8px}.product-nav{gap:14px}.motion-control button{font-size:9px}.product-scene .product-device{width:min(248px,78vw)}}
+@media(max-width:700px) and (max-height:680px){.hero{padding-top:94px;gap:18px}.hero h1{margin:26px 0 20px}.hero-buttons{margin-top:18px}.welcome-character{height:170px}.welcome-copy h2{font-size:31px}.welcome-bottom{margin-top:16px}}
 /* Keep the complete handset and caption inside the final reading viewport,
    including when the browser toolbar reduces the available height. */
 @media(max-width:700px){
@@ -159,7 +159,7 @@
  .welcome-character{height:clamp(88px,calc(100svh - 520px),130px);margin:6px 0}
  .welcome-tag{font-size:8px;padding:3px 8px}
  .welcome-copy>.eyebrow{margin:5px 0;font-size:9px}
- .welcome-copy h1{font-size:28px;margin:6px 0}
+ .welcome-copy h2{font-size:28px;margin:6px 0}
  .welcome-intro{font-size:13px;line-height:1.4;margin:6px 0 10px}
  .welcome-instruction{margin:10px 0 6px}
  .welcome-languages>button{min-height:64px;padding:6px;gap:2px}
@@ -178,8 +178,8 @@
  .welcome-character{height:calc(100svh - 100px)}
  .welcome-tag{font-size:9px;padding:5px 10px}
  .welcome-copy>.eyebrow{font-size:9px;margin:4px 0}
- .welcome-copy h1{font-size:28px;line-height:1.08;margin:6px 0}
- .welcome-copy h1 br{display:none}.welcome-copy h1>span{margin-left:6px}
+ .welcome-copy h2{font-size:28px;line-height:1.08;margin:6px 0}
+ .welcome-copy h2 br{display:none}.welcome-copy h2>span{margin-left:0}
  .welcome-intro{font-size:12px;line-height:1.4;margin:4px 0}
  .welcome-instruction{font-size:10px;margin:6px 0 5px}
  .welcome-languages{gap:8px}.welcome-languages>button{min-height:54px;padding:5px;gap:1px;border-width:2px}
@@ -196,7 +196,7 @@
  .welcome-brand img{width:88px}.welcome-brand>span{font-size:7px;max-width:210px}
  .welcome-character{height:calc(100svh - 86px);margin:0}
  .welcome-copy>.eyebrow{font-size:8px;margin:2px 0}
- .welcome-copy h1{font-size:23px;margin:3px 0}
+ .welcome-copy h2{font-size:23px;margin:3px 0}
  .welcome-intro{font-size:11px;line-height:1.3;margin:3px 0}
  .welcome-instruction{margin:4px 0 3px}
  .welcome-languages{padding:2px;gap:6px}

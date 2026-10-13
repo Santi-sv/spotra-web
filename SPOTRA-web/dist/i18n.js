@@ -5,8 +5,8 @@
  const translations={};
  const bindings=[];
  function b(key,selector,es,pt,en,kind='text') {translations[key]={es,pt,en};if(selector)bindings.push({key,selector,kind});}
- b('meta.title',null,'SPOTRA — Tu próxima sesión empieza aquí','SPOTRA — Sua próxima sessão começa aqui','SPOTRA — Your next session starts here');
- b('meta.description',null,'Spots, sesiones, eventos, market y comunidad. SPOTRA conecta a los riders de Latinoamérica.','Spots, sessões, eventos, market e comunidade. A SPOTRA conecta os riders da América Latina.','Spots, sessions, events, marketplace and community. SPOTRA connects riders across Latin America.');
+ b('meta.title',null,'SPOTRA — Spots de skate, BMX y rollers en Latinoamérica','SPOTRA — Spots de skate, BMX e patins na América Latina','SPOTRA — Skate, BMX & roller spots across Latin America');
+ b('meta.description',null,'Encuentra spots y skateparks cerca, arma sesiones con otros riders, sigue eventos y vende tu equipo usado. Gratis para skate, BMX, rollers y scooter.','Encontre spots e pistas de skate perto de você, combine sessões, acompanhe eventos e venda seu equipamento usado. Grátis para skate, BMX, patins e patinete.','Find skate spots and skateparks near you, set up sessions with other riders, follow events and sell your used gear. Free for skate, BMX, rollers and scooter.');
  b('skip','.skip','Saltar al contenido','Pular para o conteúdo','Skip to content');
  b('nav.app','#navigation a:nth-child(1)','La app','O app','The app');
  b('nav.spots','#navigation a:nth-child(2),.footer-main a[href="#spots"]','Spots y sesiones','Spots e sessões','Spots & sessions');
@@ -18,8 +18,8 @@
  b('language.label','#language-label','Cambiar idioma','Mudar idioma','Change language');
  b('launch','[data-launch]','Probar SPOTRA','Experimentar SPOTRA','Try SPOTRA');
  b('hero.eyebrow','.hero-content>.eyebrow','<span class="tiny-mark">S.</span> LA CALLE NOS CONECTA / LATINOAMÉRICA','<span class="tiny-mark">S.</span> A RUA NOS CONECTA / AMÉRICA LATINA','<span class="tiny-mark">S.</span> THE STREETS CONNECT US / LATIN AMERICA','html');
- b('hero.title','#hero-title','TU PRÓXIMA<br>SESIÓN<br><span>EMPIEZA AQUÍ.</span>','SUA PRÓXIMA<br>SESSÃO<br><span>COMEÇA AQUI.</span>','YOUR NEXT<br>SESSION<br><span>STARTS HERE.</span>','html');
- b('hero.body','.hero-bottom>p','Encuentra tu spot. Arma la sesión.<br>Conecta con quienes ruedan como tú.','Encontre seu spot. Organize a sessão.<br>Conecte-se com quem anda como você.','Find your spot. Set up a session.<br>Connect with people who ride like you.','html');
+ b('hero.title','#hero-title','TU PRÓXIMA <br>SESIÓN <br><span>EMPIEZA AQUÍ.</span>','SUA PRÓXIMA <br>SESSÃO <br><span>COMEÇA AQUI.</span>','YOUR NEXT <br>SESSION <br><span>STARTS HERE.</span>','html');
+ b('hero.body','.hero-bottom>p','Encuentra tu spot. Arma la sesión. <br>Conecta con quienes ruedan como tú.','Encontre seu spot. Organize a sessão. <br>Conecte-se com quem anda como você.','Find your spot. Set up a session. <br>Connect with people who ride like you.','html');
  b('hero.app','.hero-buttons .text-link','Conoce la app','Conheça o app','Meet the app');
  b('riders','.hero-note span:last-child,.welcome-brand>span','HECHO POR LA COMUNIDAD, PARA LA COMUNIDAD.','FEITO PELA COMUNIDADE, PARA A COMUNIDADE.','MADE BY THE COMMUNITY, FOR THE COMMUNITY.');
  b('hero.alt','.hero-image','Skater en el aire sobre un bowl durante una sesión nocturna','Skatista no ar sobre um bowl durante uma sessão noturna','Skater airborne above a bowl during a night session','alt');
@@ -57,42 +57,42 @@
  b('motion.pause',null,'Pausar animación','Pausar animação','Pause animation');
  b('motion.play',null,'Activar animación','Ativar animação','Enable animation');
  b('spots.eyebrow','.spot-copy .eyebrow','02 / SPOTS Y SESIONES','02 / SPOTS E SESSÕES','02 / SPOTS & SESSIONS');
- b('spots.title','.spot-copy h2','LA CIUDAD<br>ES TU<br><span>SPOT.</span>','A CIDADE<br>É SEU<br><span>SPOT.</span>','THE CITY<br>IS YOUR<br><span>SPOT.</span>','html');
+ b('spots.title','.spot-copy h2','LA CIUDAD <br>ES TU <br><span>SPOT.</span>','A CIDADE <br>É SEU <br><span>SPOT.</span>','THE CITY <br>IS YOUR <br><span>SPOT.</span>','html');
  b('spots.text','.spot-copy>p:not(.eyebrow)','No te quedes siempre en el mismo lugar. Explora spots, skateparks y tiendas en el mapa colaborativo. Comparte lo que descubriste y arma una sesión con otros riders.','Não fique sempre no mesmo lugar. Explore spots, pistas e lojas no mapa colaborativo. Compartilhe suas descobertas e organize uma sessão com outros riders.','Don’t always ride the same place. Explore spots, skateparks and shops on the community map. Share your discoveries and set up a session with other riders.');
  b('spots.feature1','.feature-lines li:nth-child(1)','Fotos, información y cómo llegar','Fotos, informações e como chegar','Photos, information and directions');
  b('spots.feature2','.feature-lines li:nth-child(2)','Sesiones y avisos para salir a rodar','Sessões e avisos para sair e andar','Sessions and alerts to get you riding');
  b('spots.feature3','.feature-lines li:nth-child(3)','Presencia de riders y estado del spot','Presença de riders e condições do spot','Rider presence and spot conditions');
  b('spots.explore','.spot-copy [data-show]','Explora el mapa','Explore o mapa','Explore the map');
  b('spots.alt','.spot-photo img','Rider de BMX haciendo un truco sobre un pasamanos','Rider de BMX fazendo uma manobra em um corrimão','BMX rider doing a trick on a handrail','alt');
- b('spots.photo','.photo-top>span:first-child','UN NUEVO LUGAR.<br>UNA NUEVA LÍNEA.','UM NOVO LUGAR.<br>UMA NOVA LINHA.','A NEW PLACE.<br>A NEW LINE.','html');
+ b('spots.photo','.photo-top>span:first-child','UN NUEVO LUGAR. <br>UNA NUEVA LÍNEA.','UM NOVO LUGAR. <br>UMA NOVA LINHA.','A NEW PLACE. <br>A NEW LINE.','html');
  b('spots.shops','.photo-tags>span:last-child','TIENDAS','LOJAS','SHOPS');
  b('events.alt','.event-image img','Encuentro de BMX y skate en una plaza al atardecer','Encontro de BMX e skate em uma praça ao pôr do sol','BMX and skate gathering in a plaza at sunset','alt');
- b('events.stamp','.image-stamp','NOS VEMOS<br>EN EL PARK.','A GENTE SE VÊ<br>NA PISTA.','SEE YOU<br>AT THE PARK.','html');
+ b('events.stamp','.image-stamp','NOS VEMOS <br>EN EL PARK.','A GENTE SE VÊ <br>NA PISTA.','SEE YOU <br>AT THE PARK.','html');
  b('events.eyebrow','.event-copy .eyebrow','03 / EVENTOS Y COMPETENCIAS','03 / EVENTOS E COMPETIÇÕES','03 / EVENTS & COMPETITIONS');
- b('events.title','.event-copy h2','DALE LUGAR<br>A TU<br><span class="green">PROGRESO.</span>','DÊ ESPAÇO<br>À SUA<br><span class="green">EVOLUÇÃO.</span>','MAKE ROOM<br>FOR YOUR<br><span class="green">PROGRESS.</span>','html');
+ b('events.title','.event-copy h2','DALE LUGAR <br>A TU <br><span class="green">PROGRESO.</span>','DÊ ESPAÇO <br>À SUA <br><span class="green">EVOLUÇÃO.</span>','MAKE ROOM <br>FOR YOUR <br><span class="green">PROGRESS.</span>','html');
  b('events.text','.event-copy>p:not(.eyebrow)','De una juntada a una competencia. Encuentra eventos por disciplina, fecha y cercanía. Inscríbete, sigue tus eventos y consulta el ranking.','De um encontro a uma competição. Encontre eventos por modalidade, data e proximidade. Inscreva-se, acompanhe seus eventos e confira o ranking.','From a meetup to a competition. Find events by discipline, date and location. Sign up, follow your events and check the rankings.');
  b('events.meetups','.event-words span:nth-child(1)','JUNTADAS','ENCONTROS','MEETUPS');
  b('events.contests','.event-words span:nth-child(2)','COMPETENCIAS','COMPETIÇÕES','COMPETITIONS');
  b('community.eyebrow','.community-section .section-title .eyebrow','04 / LA ESCENA LA HACEMOS ENTRE TODOS','04 / A CENA É FEITA POR TODOS NÓS','04 / WE BUILD THE SCENE TOGETHER');
- b('community.title','.community-section h2','TU CREW.<br><span class="green">TU COMUNIDAD.</span>','SUA CREW.<br><span class="green">SUA COMUNIDADE.</span>','YOUR CREW.<br><span class="green">YOUR COMMUNITY.</span>','html');
+ b('community.title','.community-section h2','TU CREW. <br><span class="green">TU COMUNIDAD.</span>','SUA CREW. <br><span class="green">SUA COMUNIDADE.</span>','YOUR CREW. <br><span class="green">YOUR COMMUNITY.</span>','html');
  b('community.text','.community-section .section-title>p','Lo que pasa entre una sesión y la siguiente también es parte de rodar.','O que acontece entre uma sessão e outra também faz parte de andar.','What happens between sessions is part of riding, too.');
  b('community.forum','.editorial-item:first-child .eyebrow','01 / FORO','01 / FÓRUM','01 / FORUM');
- b('community.forum.title','.editorial-item:first-child h3','Ese truco merece<br>ser compartido.','Essa manobra merece<br>ser compartilhada.','That trick deserves<br>to be shared.','html');
+ b('community.forum.title','.editorial-item:first-child h3','Ese truco merece <br>ser compartido.','Essa manobra merece <br>ser compartilhada.','That trick deserves <br>to be shared.','html');
  b('community.forum.text','.editorial-item:first-child>p','Publica tus clips y fotos, comparte lo que te salió y conecta con otros riders. Sigue perfiles, participa en el foro y entérate de lo que pasa en tu escena.','Publique seus vídeos e fotos, compartilhe suas conquistas e conecte-se com outros riders. Siga perfis, participe do fórum e acompanhe a sua cena.','Post your clips and photos, share what you landed and connect with other riders. Follow profiles, join the forum and stay in touch with your scene.');
  b('community.forum.cta','.editorial-item [data-show]','Explora el foro','Explore o fórum','Explore the forum');
- b('market.title','.editorial-item:last-child h3','Otro rider.<br>Tu próximo setup.','Outro rider.<br>Seu próximo setup.','Another rider.<br>Your next setup.','html');
+ b('market.title','.editorial-item:last-child h3','Otro rider. <br>Tu próximo setup.','Outro rider. <br>Seu próximo setup.','Another rider. <br>Your next setup.','html');
  b('market.text','.editorial-item:last-child>p','Compra y vende usados entre riders. Tablas, bicis, ruedas, protecciones y lo que necesitas para seguir andando, junto a las propuestas de las tiendas.','Compre e venda usados entre riders. Shapes, bikes, rodas, proteções e tudo para continuar andando, além das ofertas das lojas.','Buy and sell used gear with other riders. Boards, bikes, wheels, protection and everything you need to keep riding, alongside shop offers.');
  b('market.equipment','.market-labels span:last-child','EQUIPAMIENTO','EQUIPAMENTOS','EQUIPMENT');
  b('identity.eyebrow','.identity-copy .eyebrow','05 / PERFIL Y SPOTRA ID','05 / PERFIL E SPOTRA ID','05 / PROFILE & SPOTRA ID');
- b('identity.title','.identity-copy h2','TU MANERA<br>DE RODAR.<br><span class="green">TU IDENTIDAD.</span>','SEU JEITO<br>DE ANDAR.<br><span class="green">SUA IDENTIDADE.</span>','YOUR WAY<br>TO RIDE.<br><span class="green">YOUR IDENTITY.</span>','html');
+ b('identity.title','.identity-copy h2','TU MANERA <br>DE RODAR. <br><span class="green">TU IDENTIDAD.</span>','SEU JEITO <br>DE ANDAR. <br><span class="green">SUA IDENTIDADE.</span>','YOUR WAY <br>TO RIDE. <br><span class="green">YOUR IDENTITY.</span>','html');
  b('identity.text','.identity-copy>p:not(.eyebrow)','Tu perfil reúne tu disciplina, tu lugar y tu contenido. Construye tu recorrido, conecta tus redes y preséntate a la comunidad y a las marcas desde tu SPOTRA ID.','Seu perfil reúne sua modalidade, seu lugar e seu conteúdo. Construa sua trajetória, conecte suas redes e apresente-se à comunidade e às marcas com seu SPOTRA ID.','Your profile brings together your discipline, your location and your content. Build your story, link your socials and introduce yourself to the community and brands with your SPOTRA ID.');
  b('identity.cta','.identity-copy [data-show]','Conoce el perfil rider','Conheça o perfil rider','Explore the rider profile');
  b('identity.card.label','.id-card-top>span','IDENTIDAD RIDER','IDENTIDADE RIDER','RIDER IDENTITY');
- b('identity.card.title','.id-card-title','TU NOMBRE.<br>TU HISTORIA.','SEU NOME.<br>SUA HISTÓRIA.','YOUR NAME.<br>YOUR STORY.','html');
+ b('identity.card.title','.id-card-title','TU NOMBRE. <br>TU HISTORIA.','SEU NOME. <br>SUA HISTÓRIA.','YOUR NAME. <br>YOUR STORY.','html');
  b('identity.card.fields','.id-card-footer>span','DISCIPLINA / CIUDAD / CREW','MODALIDADE / CIDADE / CREW','DISCIPLINE / CITY / CREW');
- b('identity.caption','.identity-visual>p','Un perfil que conecta lo que haces<br>con quienes comparten tu pasión.','Um perfil que conecta o que você faz<br>com quem compartilha sua paixão.','A profile connecting what you do<br>with people who share your passion.','html');
+ b('identity.caption','.identity-visual>p','Un perfil que conecta lo que haces <br>con quienes comparten tu pasión.','Um perfil que conecta o que você faz <br>com quem compartilha sua paixão.','A profile connecting what you do <br>with people who share your passion.','html');
  b('faq.eyebrow','.faq-section .eyebrow','06 / ANTES DE SALIR','06 / ANTES DE SAIR','06 / BEFORE YOU GO');
- b('faq.title','.faq-section h2','¿DUDAS?<br><span class="green">HABLEMOS.</span>','DÚVIDAS?<br><span class="green">VAMOS CONVERSAR.</span>','QUESTIONS?<br><span class="green">LET’S TALK.</span>','html');
+ b('faq.title','.faq-section h2','¿DUDAS? <br><span class="green">HABLEMOS.</span>','DÚVIDAS? <br><span class="green">VAMOS CONVERSAR.</span>','QUESTIONS? <br><span class="green">LET’S TALK.</span>','html');
  b('faq.contact','.faq-section .text-link','Encuéntranos en @spotra.ok','Encontre a gente em @spotra.ok','Find us at @spotra.ok');
  b('faq.q1','.faq-list details:nth-child(1) summary','¿SPOTRA es solo para skaters?','A SPOTRA é só para skatistas?','Is SPOTRA only for skaters?');
  b('faq.a1','.faq-list details:nth-child(1)>p','SPOTRA reúne a riders de skate, BMX, rollers y scooter. Encuentra lugares, eventos y comunidad para tu disciplina.','A SPOTRA reúne riders de skate, BMX, patins e scooter. Encontre lugares, eventos e uma comunidade para sua modalidade.','SPOTRA brings together skate, BMX, roller and scooter riders. Find places, events and a community for your discipline.');
@@ -105,9 +105,9 @@
  b('faq.q5','.faq-list details:nth-child(5) summary','¿Cómo controlo mi privacidad?','Como controlo minha privacidade?','How do I manage my privacy?');
  b('faq.a5','.faq-list details:nth-child(5)>p','SPOTRA tiene controles de privacidad, presencia en el mapa, avisos de sesiones y herramientas para reportar o bloquear usuarios. Revisa tus preferencias desde tu perfil.','A SPOTRA tem controles de privacidade, presença no mapa, avisos de sessões e ferramentas para denunciar ou bloquear usuários. Revise suas preferências no perfil.','SPOTRA has privacy controls, map presence settings, session alerts and tools to report or block users. Review your preferences in your profile.');
  b('final.eyebrow','.final-cta .eyebrow','SPOTRA / LATINOAMÉRICA RUEDA AQUÍ','SPOTRA / A AMÉRICA LATINA ANDA AQUI','SPOTRA / LATIN AMERICA RIDES HERE');
- b('final.title','.final-cta h2','AFUERA HAY<br><span>UNA SESIÓN<br>ESPERÁNDOTE.</span>','LÁ FORA TEM<br><span>UMA SESSÃO<br>ESPERANDO VOCÊ.</span>','OUT THERE,<br><span>A SESSION<br>IS WAITING.</span>','html');
+ b('final.title','.final-cta h2','AFUERA HAY <br><span>UNA SESIÓN <br>ESPERÁNDOTE.</span>','LÁ FORA TEM <br><span>UMA SESSÃO <br>ESPERANDO VOCÊ.</span>','OUT THERE, <br><span>A SESSION <br>IS WAITING.</span>','html');
  b('footer.home','.footer .brand','Volver al inicio','Voltar ao início','Back to top','aria-label');
- b('footer.intro','.footer-main>div:first-child>p','Hecho por la comunidad, para la comunidad.<br>Desde Latinoamérica.','Feito pela comunidade, para a comunidade.<br>Da América Latina.','Made by the community, for the community.<br>From Latin America.','html');
+ b('footer.intro','.footer-main>div:first-child>p','Hecho por la comunidad, para la comunidad. <br>Desde Latinoamérica.','Feito pela comunidade, para a comunidade. <br>Da América Latina.','Made by the community, for the community. <br>From Latin America.','html');
  b('footer.explore','.footer-main>div:nth-child(2)>h3','EXPLORA','EXPLORE','EXPLORE');
  b('footer.connect','.footer-main>div:nth-child(3)>h3','CONECTA','CONECTE-SE','CONNECT');
  b('footer.app','.footer-main a[href="#app"]','La app por dentro','O app por dentro','Inside the app');
@@ -120,8 +120,8 @@
  b('footer.signoff','.footer-bottom>span:last-child','ENCUENTRA. CONECTA. RUEDA.','ENCONTRE. CONECTE-SE. ANDE.','FIND. CONNECT. RIDE.');
 
  b('welcome.greeting','#guide-speech','Hola, soy Spotri','Oi, eu sou o Spotri','Hi, I’m Spotri');
- b('welcome.title','#welcome-title','SOY<br><span>SPOTRI.</span>','SOU<br><span>SPOTRI.</span>','I’M<br><span>SPOTRI.</span>','html');
- b('welcome.intro','.welcome-intro','¡Bienvenido a SPOTRA!<br>Elige tu idioma y tu disciplina.','Bem-vindo à SPOTRA!<br>Escolha seu idioma e sua modalidade.','Welcome to SPOTRA!<br>Choose your language and your discipline.','html');
+ b('welcome.title','#welcome-title','SOY <br><span>SPOTRI.</span>','SOU <br><span>SPOTRI.</span>','I’M <br><span>SPOTRI.</span>','html');
+ b('welcome.intro','.welcome-intro','¡Bienvenido a SPOTRA! <br>Elige tu idioma y tu disciplina.','Bem-vindo à SPOTRA! <br>Escolha seu idioma e sua modalidade.','Welcome to SPOTRA! <br>Choose your language and your discipline.','html');
  b('welcome.language','.welcome-instruction','01 / Idioma','01 / Idioma','01 / Language');
  b('welcome.ride','#ride-choice-title','02 / ¿Con qué ruedas?','02 / Como você anda?','02 / What do you ride?');
  b('welcome.enter','#welcome-enter .deck-label','Vamos a rodar','Vamos andar','Let’s ride');
@@ -180,6 +180,9 @@
   document.querySelector('meta[name="description"]').content=t('meta.description');
   const menu=document.querySelector('.menu-toggle');
   menu.setAttribute('aria-label',t(menu.getAttribute('aria-expanded')==='true'?'menu.close':'menu.open'));
+  // la dirección acompaña al idioma elegido (sin recargar la página)
+  const paths={es:'/',pt:'/pt/',en:'/en/'};
+  if(/^\/((pt|en)\/?)?(index\.html)?$/.test(location.pathname)&&location.pathname!==paths[value]){try{history.replaceState(null,'',paths[value]+location.search+location.hash);}catch(e){}}
   window.dispatchEvent(new CustomEvent('spotra:languagechange',{detail:{locale}}));
  }
  window.SPOTRA_I18N={t,applyLanguage,get locale(){return locale;},ready:false};
@@ -211,6 +214,8 @@
  });
  const pause=document.getElementById('welcome-pause');
  pause.addEventListener('click',()=>{const paused=welcome.classList.toggle('is-paused');pause.setAttribute('aria-pressed',String(paused));pause.textContent=paused?'Animar / Play':'Pausar / Pause';window.dispatchEvent(new CustomEvent('spotra:pausechange',{detail:{paused}}));});
- applyLanguage('es');
- document.querySelector('[data-language-choice="es"]').focus({preventScroll:true});
+ // 13/10/2026: cada idioma tiene su dirección (/, /pt/, /en/); la página arranca en el suyo
+ const pageLang=locales[document.documentElement.dataset.pageLang]?document.documentElement.dataset.pageLang:'es';
+ applyLanguage(pageLang);
+ document.querySelector('[data-language-choice="'+pageLang+'"]').focus({preventScroll:true});
 })();

@@ -1,152 +1,225 @@
-<!doctype html>
-<html lang="es-419">
+<!DOCTYPE html>
+<html lang="es-419" data-page-lang="es">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<script>/* La app vive en app.spotra.online: iconos viejos instalados desde spotra.online, enlaces compartidos (?listing= ?place= ?event= ?post=) y enlaces de mails van directo a la app */(function(){var l=location,h=l.hash,ids=" welcome contenido app app-map app-community app-profile spots eventos comunidad identidad preguntas ";var standalone=navigator.standalone===true||(window.matchMedia&&matchMedia("(display-mode: standalone)").matches);var appQuery=/[?&](listing|place|event|post|type|k)=/.test(l.search);var appHash=h.length>1&&ids.indexOf(" "+h.slice(1)+" ")<0;if(standalone||appQuery||appHash){l.replace("https://app.spotra.online"+(l.pathname==="/index.html"?"/":l.pathname)+l.search+h);}})();</script>
-<title>SPOTRA — Tu próxima sesión empieza acá</title>
-<meta name="description" content="Spots, sesiones, eventos, market y comunidad. SPOTRA conecta a los riders de Latinoamérica.">
-<meta name="theme-color" content="#070907">
+<script src="/boot.js"></script><!-- seo: generado por scripts/build-seo.py -->
+<title>SPOTRA — Spots de skate, BMX y rollers en Latinoamérica</title>
+<meta name="description" content="Encuentra spots y skateparks cerca, arma sesiones con otros riders, sigue eventos y vende tu equipo usado. Gratis para skate, BMX, rollers y scooter.">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://spotra.online/">
+<link rel="alternate" hreflang="es" href="https://spotra.online/">
+<link rel="alternate" hreflang="pt-BR" href="https://spotra.online/pt/">
+<link rel="alternate" hreflang="en" href="https://spotra.online/en/">
+<link rel="alternate" hreflang="x-default" href="https://spotra.online/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SPOTRA">
-<meta property="og:title" content="SPOTRA — Tu próxima sesión empieza acá">
+<meta property="og:locale" content="es_LA">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="SPOTRA — Tu próxima sesión empieza aquí">
 <meta property="og:description" content="Hecho por la comunidad, para la comunidad. Encuentra spots, arma una sesión y conecta con riders de Latinoamérica.">
 <meta property="og:url" content="https://spotra.online/">
 <meta property="og:image" content="https://spotra.online/assets/spotra-share.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="SPOTRA: Tu próxima sesión empieza acá. SPOTRI sobre su skate en un skatepark nocturno.">
+<meta property="og:image:alt" content="SPOTRA: Tu próxima sesión empieza aquí. SPOTRI sobre su skate en un skatepark nocturno.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="SPOTRA — Tu próxima sesión empieza acá">
-<meta name="twitter:description" content="Hecho por la comunidad, para la comunidad. Desde Latinoamérica.">
+<meta name="twitter:title" content="SPOTRA — Tu próxima sesión empieza aquí">
+<meta name="twitter:description" content="Hecho por la comunidad, para la comunidad. Encuentra spots, arma una sesión y conecta con riders de Latinoamérica.">
 <meta name="twitter:image" content="https://spotra.online/assets/spotra-share.jpg">
-<meta name="twitter:image:alt" content="SPOTRA y SPOTRI: Tu próxima sesión empieza acá.">
-<link rel="preload" as="image" href="assets/spotri-welcome.webp" imagesrcset="assets/spotri-welcome-small.webp 540w, assets/spotri-welcome.webp 1086w" imagesizes="(max-width:700px) 45vw, (max-height:650px) 320px, 460px" fetchpriority="high">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070907'/%3E%3Cpath d='M24 8H12L8 16h16l-4 8H8' fill='none' stroke='%2374ff3a' stroke-width='4'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin><link rel="preconnect" href="https://api.fontshare.com"><link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700,500&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@700&display=swap" rel="stylesheet">
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="site.css?v=450a8ec52ea7">
+<meta name="twitter:image:alt" content="SPOTRA: Tu próxima sesión empieza aquí. SPOTRI sobre su skate en un skatepark nocturno.">
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://spotra.online/#organization",
+   "name": "SPOTRA",
+   "url": "https://spotra.online/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://spotra.online/assets/icon-512.png",
+    "width": 512,
+    "height": 512
+   },
+   "email": "spotra.2026@gmail.com",
+   "sameAs": [
+    "https://www.instagram.com/spotra.ok"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://spotra.online/#website",
+   "url": "https://spotra.online/",
+   "name": "SPOTRA",
+   "inLanguage": [
+    "es-419",
+    "pt-BR",
+    "en"
+   ],
+   "publisher": {
+    "@id": "https://spotra.online/#organization"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://spotra.online/#webpage",
+   "url": "https://spotra.online/",
+   "name": "SPOTRA — Spots de skate, BMX y rollers en Latinoamérica",
+   "description": "Encuentra spots y skateparks cerca, arma sesiones con otros riders, sigue eventos y vende tu equipo usado. Gratis para skate, BMX, rollers y scooter.",
+   "inLanguage": "es-419",
+   "isPartOf": {
+    "@id": "https://spotra.online/#website"
+   },
+   "about": {
+    "@id": "https://app.spotra.online/#app"
+   },
+   "primaryImageOfPage": "https://spotra.online/assets/spotra-share.jpg"
+  },
+  {
+   "@type": "WebApplication",
+   "@id": "https://app.spotra.online/#app",
+   "name": "SPOTRA",
+   "url": "https://app.spotra.online/",
+   "description": "App web gratuita para riders de skate, BMX, rollers y scooter: mapa colaborativo de spots y skateparks, sesiones, eventos con ranking, foro y market de equipo usado.",
+   "applicationCategory": "SportsApplication",
+   "operatingSystem": "Web, iOS, Android",
+   "browserRequirements": "Requires JavaScript. Requires HTML5.",
+   "inLanguage": [
+    "es-419",
+    "pt-BR",
+    "en"
+   ],
+   "areaServed": "Latinoamérica",
+   "image": "https://spotra.online/assets/spotra-share.jpg",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "publisher": {
+    "@id": "https://spotra.online/#organization"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://spotra.online/#faq",
+   "inLanguage": "es-419",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿SPOTRA es solo para skaters?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "SPOTRA reúne a riders de skate, BMX, rollers y scooter. Encuentra lugares, eventos y comunidad para tu disciplina."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Qué puedo encontrar en el mapa?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Spots, skateparks y tiendas. Consulta fotos, información y cómo llegar, comparte lugares y descubre sesiones de la comunidad."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Puedo organizar una sesión o un evento?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "La app permite crear sesiones y eventos para reunirte con otros riders. Los eventos cuentan con inscripciones y una sección de ranking."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Qué es mi SPOTRA ID?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Es tu identidad rider dentro de SPOTRA. Tu perfil, disciplina, ciudad, redes y contenido te ayudan a conectar con la comunidad y las marcas."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cómo controlo mi privacidad?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "SPOTRA tiene controles de privacidad, presencia en el mapa, avisos de sesiones y herramientas para reportar o bloquear usuarios. Revisa tus preferencias desde tu perfil."
+     }
+    }
+   ]
+  }
+ ]
+}</script><!-- /seo -->
+<meta name="theme-color" content="#070907">
+<link rel="preload" as="image" href="/assets/spotri-welcome.webp" imagesrcset="/assets/spotri-welcome-small.webp 540w, /assets/spotri-welcome.webp 1086w" imagesizes="(max-width:700px) 45vw, (max-height:650px) 320px, 460px" fetchpriority="high">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/archivo-black-400-latin.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="/assets/fonts/general-sans-400.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="stylesheet" href="/site.css?v=9163a7f3f477">
 </head>
 <body class="welcome-open">
 <section class="welcome" id="welcome" aria-labelledby="welcome-title">
- <div class="welcome-brand"><img src="assets/logo.webp" srcset="assets/logo-small.webp 635w, assets/logo.webp 1270w" sizes="(max-width:700px) 200px, 260px" alt="SPOTRA" width="148" height="45"><span>HECHO POR LA COMUNIDAD, PARA LA COMUNIDAD.</span></div>
- <div class="welcome-stage">
-  <div class="welcome-character"><span class="welcome-spotri-anchor spotri-dock" aria-hidden="true"></span><span class="welcome-tag">TU GUÍA / SEU GUIA / YOUR GUIDE</span></div>
-  <div class="welcome-copy"><p class="eyebrow">HOLA. OLÁ. HELLO.</p><h1 id="welcome-title">SOY<br><span>SPOTRI.</span></h1><p class="welcome-intro">¡Bienvenido a SPOTRA!<br>Bem-vindo à SPOTRA! / Welcome to SPOTRA!</p><p class="welcome-instruction">01 / Idioma / Language</p>
-   <div class="welcome-languages" role="group" aria-label="Idioma"><button type="button" aria-pressed="true" data-language-choice="es" lang="es-419"><span>ES</span><span>Español<small>Latinoamérica</small></span></button><button type="button" aria-pressed="false" data-language-choice="pt" lang="pt-BR"><span>PT</span><span>Português<small>Brasil</small></span></button><button type="button" aria-pressed="false" data-language-choice="en" lang="en"><span>EN</span><span>English<small>International</small></span></button></div>
-   <fieldset class="welcome-rides"><legend id="ride-choice-title">02 / ¿Con qué ruedas?</legend><div class="ride-options">
-    <label class="ride-option"><input type="radio" name="ride" value="skate" checked><span class="gear-preview" data-vehicle="skate" aria-hidden="true"></span><span>Skate</span></label>
-    <label class="ride-option"><input type="radio" name="ride" value="bmx"><span class="gear-preview" data-vehicle="bmx" aria-hidden="true"></span><span>BMX</span></label>
-    <label class="ride-option"><input type="radio" name="ride" value="rollers"><span class="gear-preview" data-vehicle="rollers" aria-hidden="true"></span><span>Rollers</span></label>
-    <label class="ride-option"><input type="radio" name="ride" value="scooter"><span class="gear-preview" data-vehicle="scooter" aria-hidden="true"></span><span>Scooter</span></label>
-   </div></fieldset>
-   <button type="button" class="button welcome-enter" id="welcome-enter"><span class="deck-face"><span class="deck-label">Vamos a rodar</span></span></button><p class="welcome-ride-note">Haz scroll y SPOTRI te acompaña por toda la web.</p>
-  </div>
- </div>
- <div class="welcome-bottom"><span>SKATE / BMX / ROLLERS / SCOOTER</span><button type="button" id="welcome-pause" aria-pressed="false">Pausar / Pause</button></div>
- <noscript>Activa JavaScript para elegir el idioma. / Ative o JavaScript. / Enable JavaScript to choose your language.</noscript>
-</section>
-<div class="site-shell" id="site-shell" tabindex="0" hidden inert>
-<a class="skip" href="#contenido">Saltar al contenido</a>
-<header class="header"><a class="brand" href="#" aria-label="SPOTRA, inicio"><img src="assets/logo.webp" srcset="assets/logo-small.webp 635w, assets/logo.webp 1270w" sizes="(max-width:700px) 200px, 260px" alt="SPOTRA" width="148" height="45"></a><nav id="navigation" aria-label="Navegación principal"><a href="#app">La app</a><a href="#spots">Spots & sesiones</a><a href="#comunidad">Comunidad</a></nav><div class="header-actions"><label class="language-control"><span class="sr-only" id="language-label">Idioma</span><select id="language-select" aria-labelledby="language-label"><option value="es" lang="es-419">ES</option><option value="pt" lang="pt-BR">PT</option><option value="en" lang="en">EN</option></select></label><details class="ride-settings" id="ride-settings"><summary id="ride-settings-label">SPOTRI</summary><div class="ride-settings-panel"><label for="journey-ride" id="journey-ride-label">Tu disciplina</label><select id="journey-ride"><option value="skate">Skate</option><option value="bmx">BMX</option><option value="rollers">Rollers</option><option value="scooter">Scooter</option></select><button type="button" id="journey-pause" aria-pressed="false">Pausar animación</button></div></details><a class="button small" data-launch href="https://app.spotra.online/">Probar SPOTRA</a><button class="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir menú">☰</button></div></header>
-<main id="contenido">
-<section class="hero" aria-labelledby="hero-title"><img class="hero-image" src="assets/bowl.webp" alt="Skater en el aire sobre un bowl durante una sesión nocturna" width="1448" height="1086" loading="lazy" fetchpriority="low"><div class="hero-shade"></div><span class="hero-spotri-anchor spotri-dock" aria-hidden="true"></span><div class="hero-content"><div class="eyebrow"><span class="tiny-mark">S.</span> LA CALLE NOS CONECTA / LATINOAMÉRICA</div><h1 id="hero-title">TU PRÓXIMA<br>SESIÓN<br><span>EMPIEZA ACÁ.</span></h1><div class="hero-bottom"><p>Encontrá tu spot. Armá la sesión.<br>Conectá con la gente que rueda como vos.</p><div class="hero-buttons"><a class="button" data-launch href="https://app.spotra.online/">Probar SPOTRA</a><a class="text-link" href="#app">Conocé la app <span aria-hidden="true">↘</span></a></div></div></div><div class="hero-note"><span>SKATE / BMX / ROLLERS / SCOOTER</span><span>HECHO POR LA COMUNIDAD, PARA LA COMUNIDAD.</span></div><div class="ticker" aria-label="Mapa, sesiones, eventos, market, foro, SPOTRA ID"><div class="ticker-track" aria-hidden="true"><div class="ticker-group"><span>SPOTS</span><i>✳︎</i><span>SESIONES</span><i>✳︎</i><span>EVENTOS</span><i>✳︎</i><span>MARKET</span><i>✳︎</i><span>FORO</span><i>✳︎</i><span>SPOTRA ID</span><i>✳︎</i></div><div class="ticker-group"><span>SPOTS</span><i>✳︎</i><span>SESIONES</span><i>✳︎</i><span>EVENTOS</span><i>✳︎</i><span>MARKET</span><i>✳︎</i><span>FORO</span><i>✳︎</i><span>SPOTRA ID</span><i>✳︎</i></div></div></div></section>
-<section class="product-story" id="app" aria-labelledby="product-title">
-
- <article class="product-scene scene-map" id="app-map" aria-labelledby="map-title">
- <div class="product-heading wrap"><h2 id="product-title" class="eyebrow">01 / SPOTRA POR DENTRO</h2><nav class="product-nav" aria-label="Conocé las pantallas de SPOTRA"><a href="#app-map">Mapa <span aria-hidden="true">↘</span></a><a href="#app-community">Foro <span aria-hidden="true">↘</span></a><a href="#app-profile">Perfil <span aria-hidden="true">↘</span></a></nav><div class="motion-control"><button type="button" id="story-pause" aria-pressed="false">Pausar animación</button></div></div>
-  <img class="scene-texture park-texture" src="assets/map-plaza.webp" alt="" aria-hidden="true" loading="lazy" width="1280" height="853">
-  <div class="scene-inner wrap"><figure class="product-device"><a href="assets/screen-map.jpg" target="_blank" rel="noopener" aria-label="Ampliar captura real del mapa de SPOTRA"><div class="device-frame device-dark"><div class="device-screen"><div class="device-status" aria-hidden="true"><span>9:41</span><span class="device-island"></span><span class="device-indicators"><i></i><b></b></span></div><div class="device-capture"><img src="assets/screen-map.jpg" alt="Mapa real de SPOTRA con spots, skateparks, filtros y navegación inferior" width="1320" height="2356" loading="lazy"></div><div class="device-home" aria-hidden="true"><span></span></div></div></div></a><figcaption><span>MAPA DE SPOTS</span><span>01 / 03</span></figcaption></figure><div class="product-copy spotri-presenter"><div class="presenter-character"><span class="spotri-dock presenter-dock" aria-hidden="true"></span><span class="presenter-signature">SPOTRI</span></div><div class="presenter-message"><p class="eyebrow">SPOTRI / TU GUÍA</p><h3 id="map-title">Mapa de spots</h3><p class="scene-description">Te muestro el mapa. Encuentra spots, skateparks y tiendas, mira sus fotos y descubre cómo llegar. Comparte ese lugar que solo tu crew conoce.</p><div class="presenter-actions"><button class="scene-link" data-present-next="app-community">Ahora, tu comunidad <span aria-hidden="true">↗</span></button><button class="replay-scene" data-replay aria-label="Volver a desplegar esta pantalla"><svg aria-hidden="true" focusable="false"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-  <path d="M3 3v5h5" />
-</svg></button></div></div></div></div>
- </article>
- <article class="product-scene scene-community" id="app-community" aria-labelledby="forum-title">
-  <img class="scene-texture rider-texture" src="assets/forum-diy.webp" alt="" aria-hidden="true" loading="lazy" width="1280" height="853">
-  <div class="scene-inner wrap"><figure class="product-device"><a href="assets/screen-forum.jpg" target="_blank" rel="noopener" aria-label="Ampliar captura real del foro de SPOTRA"><div class="device-frame device-light"><div class="device-screen"><div class="device-status" aria-hidden="true"><span>9:41</span><span class="device-island"></span><span class="device-indicators"><i></i><b></b></span></div><div class="device-capture"><img src="assets/screen-forum.jpg" alt="Foro real de SPOTRA con una publicación de bienvenida y su navegación inferior" width="1320" height="2355" loading="lazy"></div><div class="device-home" aria-hidden="true"><span></span></div></div></div></a><figcaption><span>FORO & COMUNIDAD</span><span>02 / 03</span></figcaption></figure><div class="product-copy spotri-presenter"><div class="presenter-character"><span class="spotri-dock presenter-dock" aria-hidden="true"></span><span class="presenter-signature">SPOTRI</span></div><div class="presenter-message"><p class="eyebrow">SPOTRI / TU GUÍA</p><h3 id="forum-title">Foro y comunidad</h3><p class="scene-description">Ese truco que costó cien intentos merece compartirse. Publica clips y fotos, sigue a otros riders y descubre qué está pasando en tu ciudad.</p><div class="presenter-actions"><button class="scene-link" data-present-next="app-profile">Conoce tu perfil <span aria-hidden="true">↗</span></button><button class="replay-scene" data-replay aria-label="Volver a desplegar esta pantalla"><svg aria-hidden="true" focusable="false"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-  <path d="M3 3v5h5" />
-</svg></button></div></div></div></div>
- </article>
- <article class="product-scene scene-profile" id="app-profile" aria-labelledby="profile-title">
-
-  <div class="scene-inner wrap"><figure class="product-device"><a href="assets/screen-profile-showcase.webp" target="_blank" rel="noopener" aria-label="Ampliar el mockup del perfil de Santiago"><div class="device-frame device-dark"><div class="device-screen"><div class="device-status" aria-hidden="true"><span>9:41</span><span class="device-island"></span><span class="device-indicators"><i></i><b></b></span></div><div class="device-capture"><img src="assets/screen-profile-showcase.webp" alt="Perfil ilustrativo de Santiago en SPOTRA con 3489 seguidores, 1340 seguidos y seis publicaciones" width="934" height="1684" loading="lazy"></div><div class="device-home" aria-hidden="true"><span></span></div></div></div></a><figcaption><span>PERFIL RIDER</span><span>03 / 03</span></figcaption></figure><div class="product-copy spotri-presenter"><div class="presenter-character"><span class="spotri-dock presenter-dock" aria-hidden="true"></span><span class="presenter-signature">SPOTRI</span></div><div class="presenter-message"><p class="eyebrow">SPOTRI / TU GUÍA</p><h3 id="profile-title">Tu perfil rider</h3><p class="scene-description">Tu disciplina, tus redes y tus publicaciones, en un mismo lugar. Muestra tu forma de rodar y conecta con quienes comparten tu pasión.</p><div class="presenter-actions"><button class="scene-link" data-present-next="spots">Salgamos a rodar <span aria-hidden="true">↗</span></button><button class="replay-scene" data-replay aria-label="Volver a desplegar esta pantalla"><svg aria-hidden="true" focusable="false"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-  <path d="M3 3v5h5" />
-</svg></button></div></div></div></div>
- </article>
-</section>
-<section class="spot-section" id="spots"><div class="spot-inner wrap"><div class="spot-copy"><p class="eyebrow">02 / SPOTS & SESIONES</p><h2>LA CIUDAD<br>ES TU<br><span>SPOT.</span></h2><p>No te quedes siempre en el mismo lugar. Explorá spots, skateparks y tiendas en el mapa colaborativo. Compartí el que descubriste y armá una sesión con otros riders.</p><ul class="feature-lines"><li>Fotos, información y cómo llegar</li><li>Sesiones y avisos para salir a rodar</li><li>Presencia de riders y estado del spot</li></ul><button class="button dark" data-show="map">Explorá el mapa</button></div><div class="spot-photo"><img src="assets/bmx.webp" alt="Rider de BMX haciendo un truco sobre un pasamanos" width="1448" height="1086" loading="lazy"><div class="photo-top"><span>UN NUEVO LUGAR.<br>UNA NUEVA LÍNEA.</span><span>SP / 02</span></div><div class="photo-tags"><span>SPOTS</span><span>SKATEPARKS</span><span>TIENDAS</span></div></div></div></section>
-<section class="events-section wrap" id="eventos"><div class="event-image"><img src="assets/event-jam.webp" alt="Encuentro de BMX y skate en una plaza al atardecer" width="1280" height="853" loading="lazy"><span class="image-stamp">NOS VEMOS<br>EN EL PARK.</span></div><div class="event-copy"><p class="eyebrow">03 / EVENTOS & COMPETENCIAS</p><h2>DALE LUGAR<br>A TU<br><span class="green">PROGRESO.</span></h2><p>De una juntada a una competencia. Encontrá eventos por disciplina, fecha y cercanía. Inscribite, seguí tus eventos y consultá el ranking.</p><div class="event-words"><span>JUNTADAS</span><span>COMPETENCIAS</span><span>RANKING</span></div><a class="button" data-launch href="https://app.spotra.online/">Probar SPOTRA</a></div></section>
-<section class="community-section wrap" id="comunidad"><div class="section-title"><div><p class="eyebrow">04 / LA ESCENA LA HACEMOS ENTRE TODOS</p><h2>TU CREW.<br><span class="green">TU COMUNIDAD.</span></h2></div><p>Lo que pasa entre una sesión y la siguiente también es parte de rodar.</p></div><div class="editorial-grid"><article class="editorial-item"><div class="item-heading"><span class="eyebrow">01 / FORO</span><span aria-hidden="true">✳︎</span></div><h3>Ese truco merece<br>ser compartido.</h3><p>Publicá tus clips y fotos, compartí lo que te salió y conectá con otros riders. Seguí perfiles, participá en el foro y enterate de lo que pasa en tu escena.</p><button class="underlined-button" data-show="community">Recorré el foro</button></article><article class="editorial-item"><div class="item-heading"><span class="eyebrow">02 / MARKET</span><span aria-hidden="true">✳︎</span></div><h3>Otro rider.<br>Tu próximo setup.</h3><p>Comprá y vendé usados entre riders. Tablas, bicis, ruedas, protecciones y lo que necesitás para seguir andando, junto a las propuestas de las tiendas.</p><div class="market-labels"><span>SKATE</span><span>BMX</span><span>ROLLERS</span><span>EQUIPAMIENTO</span></div></article></div><div class="mobile-scene-art" data-variant="crew" aria-hidden="true"></div></section>
-<section class="identity-section wrap" id="identidad"><div class="identity-copy"><p class="eyebrow">05 / PERFIL & SPOTRA ID</p><h2>TU MANERA<br>DE RODAR.<br><span class="green">TU IDENTIDAD.</span></h2><p>Tu perfil reúne tu disciplina, tu lugar y tu contenido. Construí tu recorrido, conectá tus redes y presentate a la comunidad y a las marcas desde tu SPOTRA ID.</p><button class="underlined-button" data-show="profile">Conocé el perfil rider</button></div><div class="identity-visual"><div class="id-card"><div class="id-card-top"><img src="assets/logo.webp" srcset="assets/logo-small.webp 635w, assets/logo.webp 1270w" sizes="(max-width:700px) 200px, 260px" alt="SPOTRA" width="118" height="36"><span>RIDER IDENTITY</span></div><div class="id-card-title">TU NOMBRE.<br>TU HISTORIA.</div><div class="id-card-line"></div><div class="id-card-footer"><span>DISCIPLINA / CIUDAD / CREW</span><b>SPOTRA ID</b></div></div><p>Un perfil que conecta lo que hacés<br>con la gente que comparte tu pasión.</p></div></section>
-<section class="faq-section wrap" id="preguntas"><div><p class="eyebrow">06 / ANTES DE SALIR</p><h2>¿DUDAS?<br><span class="green">HABLEMOS.</span></h2><a class="text-link" href="https://www.instagram.com/spotra.ok" target="_blank" rel="noopener">Encontranos en @spotra.ok</a></div><div class="faq-list"><details><summary>¿SPOTRA es solo para skaters?</summary><p>SPOTRA reúne a riders de skate, BMX, rollers y scooter. Encontrá lugares, eventos y comunidad para tu disciplina.</p></details><details><summary>¿Qué puedo encontrar en el mapa?</summary><p>Spots, skateparks y tiendas. Consultá fotos, información y cómo llegar, compartí lugares y descubrí sesiones de la comunidad.</p></details><details><summary>¿Puedo organizar una sesión o un evento?</summary><p>La app permite crear sesiones y eventos para encontrarte con otros riders. Los eventos cuentan con inscripciones y una sección de ranking.</p></details><details><summary>¿Qué es mi SPOTRA ID?</summary><p>Es tu identidad rider dentro de SPOTRA. Tu perfil, disciplina, ciudad, redes y contenido te ayudan a conectar con la comunidad y las marcas.</p></details><details><summary>¿Cómo controlo mi privacidad?</summary><p>SPOTRA tiene controles de privacidad, presencia en el mapa, avisos de sesiones y herramientas para reportar o bloquear usuarios. Revisá tus preferencias desde tu perfil.</p></details></div></section>
-<section class="final-cta"><div class="wrap"><p class="eyebrow">SPOTRA / LATINOAMÉRICA RUEDA ACÁ</p><h2>AFUERA HAY<br><span>UNA SESIÓN<br>ESPERÁNDOTE.</span></h2><a class="button dark" data-launch href="https://app.spotra.online/">Probar SPOTRA</a><span class="cta-disciplines">SKATE / BMX / ROLLERS / SCOOTER</span></div><div class="mobile-scene-art" data-variant="park" aria-hidden="true"></div></section>
-</main>
-<footer class="footer wrap"><div class="footer-main"><div><a href="#" class="brand" aria-label="Volver al inicio"><img src="assets/logo.webp" srcset="assets/logo-small.webp 635w, assets/logo.webp 1270w" sizes="(max-width:700px) 200px, 260px" alt="SPOTRA" width="148" height="45"></a><p>Hecho por la comunidad, para la comunidad.<br>Desde Latinoamérica.</p></div><div><h3>EXPLORÁ</h3><a href="#app">La app por dentro</a><a href="#spots">Spots & sesiones</a><a href="#eventos">Eventos & ranking</a><a href="#comunidad">Foro & market</a></div><div><h3>CONECTÁ</h3><a href="https://www.instagram.com/spotra.ok" target="_blank" rel="noopener">Instagram / @spotra.ok</a><a href="mailto:spotra.2026@gmail.com">spotra.2026@gmail.com</a><a href="#app-map" data-spotri-start>Recorré SPOTRA con SPOTRI</a><a href="#preguntas">Preguntas frecuentes</a></div></div><div class="footer-bottom"><span>© 2026 SPOTRA</span><div><a href="https://app.spotra.online/privacidad.html" target="_blank" rel="noopener">Privacidad</a><a href="https://app.spotra.online/terminos.html" target="_blank" rel="noopener">Términos</a></div><a class="back-to-top" href="#"><svg aria-hidden="true" focusable="false"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="m5 12 7-7 7 7" />
-  <path d="M12 19V5" />
-</svg><span class="back-to-top-label">Volver al inicio</span></a><span>ENCONTRÁ. CONECTÁ. RODÁ.</span></div><div class="mobile-scene-art" data-variant="street" aria-hidden="true"></div></footer>
-
+<div class="welcome-brand"><img src="/assets/logo.webp" srcset="/assets/logo-320.webp 320w, /assets/logo-small.webp 635w, /assets/logo.webp 1270w" sizes="(max-width:700px) 110px, 170px" alt="SPOTRA" width="148" height="45"><span>HECHO POR LA COMUNIDAD, PARA LA COMUNIDAD.</span></div>
+<div class="welcome-stage">
+<div class="welcome-character"><span class="welcome-spotri-anchor spotri-dock" aria-hidden="true"></span><span class="welcome-tag">TU GUÍA / SEU GUIA / YOUR GUIDE</span></div>
+<div class="welcome-copy"><p class="eyebrow">HOLA. OLÁ. HELLO.</p><h2 id="welcome-title">SOY <br><span>SPOTRI.</span></h2><p class="welcome-intro">¡Bienvenido a SPOTRA! <br>Elige tu idioma y tu disciplina.</p><p class="welcome-instruction">01 / Idioma</p>
+<div class="welcome-languages" role="group" aria-label="Idioma"><button type="button" aria-pressed="true" data-language-choice="es" lang="es-419"><span>ES</span><span>Español<small>Latinoamérica</small></span></button><button type="button" aria-pressed="false" data-language-choice="pt" lang="pt-BR"><span>PT</span><span>Português<small>Brasil</small></span></button><button type="button" aria-pressed="false" data-language-choice="en" lang="en"><span>EN</span><span>English<small>International</small></span></button></div>
+<fieldset class="welcome-rides"><legend id="ride-choice-title">02 / ¿Con qué ruedas?</legend><div class="ride-options">
+<label class="ride-option"><input type="radio" name="ride" value="skate" checked=""><span class="gear-preview" data-vehicle="skate" aria-hidden="true"></span><span>Skate</span></label>
+<label class="ride-option"><input type="radio" name="ride" value="bmx"><span class="gear-preview" data-vehicle="bmx" aria-hidden="true"></span><span>BMX</span></label>
+<label class="ride-option"><input type="radio" name="ride" value="rollers"><span class="gear-preview" data-vehicle="rollers" aria-hidden="true"></span><span>Rollers</span></label>
+<label class="ride-option"><input type="radio" name="ride" value="scooter"><span class="gear-preview" data-vehicle="scooter" aria-hidden="true"></span><span>Scooter</span></label>
+</div></fieldset>
+<button type="button" class="button welcome-enter" id="welcome-enter"><span class="deck-face"><span class="deck-label">Vamos a rodar</span></span></button><p class="welcome-ride-note">Explora a tu ritmo. SPOTRI te acompaña.</p>
 </div>
-<div class="spotri-guide" id="spotri-guide" data-state="welcome" data-greeting="true"><div class="guide-character" id="guide-character"><img class="guide-greeting" id="guide-greeting" src="assets/spotri-welcome.webp" srcset="assets/spotri-welcome-small.webp 540w, assets/spotri-welcome.webp 1086w" sizes="(max-width:700px) 45vw, (max-height:650px) 320px, 460px" width="1536" height="2048" alt="" aria-hidden="true" fetchpriority="high"><span class="ride-sprite guide-sprite" id="guide-sprite" data-vehicle="skate" aria-hidden="true"></span></div><picture><source media="(max-width:700px)" data-srcset="assets/spotri-closeup-mobile.webp"><img class="guide-detail" id="guide-detail" data-src="assets/spotri-closeup-4k.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="3840" height="5120" alt="" aria-hidden="true" decoding="async" fetchpriority="low"></picture><span class="guide-speech" id="guide-speech" role="status" aria-live="polite">Hola, soy Spotri</span></div>
-
-
-
-
-
-
-
-
-<script src="site.js?v=abc69ced2b80"></script>
+</div>
+<div class="welcome-bottom"><span>SKATE / BMX / ROLLERS / SCOOTER</span><button type="button" id="welcome-pause" aria-pressed="false">Pausar / Pause</button></div>
+<noscript>Activa JavaScript para elegir el idioma. / Ative o JavaScript. / Enable JavaScript to choose your language.</noscript>
+</section>
+<div class="site-shell" id="site-shell" tabindex="0" hidden="" inert="">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="header"><a class="brand" href="#" aria-label="SPOTRA, inicio"><img src="/assets/logo.webp" srcset="/assets/logo-320.webp 320w, /assets/logo-small.webp 635w, /assets/logo.webp 1270w" sizes="(max-width:700px) 110px, 170px" alt="SPOTRA" width="148" height="45"></a><nav id="navigation" aria-label="Navegación principal"><a href="#app">La app</a><a href="#spots">Spots y sesiones</a><a href="#comunidad">Comunidad</a></nav><div class="header-actions"><label class="language-control"><span class="sr-only" id="language-label">Cambiar idioma</span><select id="language-select" aria-labelledby="language-label"><option value="es" lang="es-419" selected="">ES</option><option value="pt" lang="pt-BR">PT</option><option value="en" lang="en">EN</option></select></label><details class="ride-settings" id="ride-settings"><summary id="ride-settings-label">SPOTRI</summary><div class="ride-settings-panel"><label for="journey-ride" id="journey-ride-label">Tu disciplina</label><select id="journey-ride"><option value="skate">Skate</option><option value="bmx">BMX</option><option value="rollers">Rollers</option><option value="scooter">Scooter</option></select><button type="button" id="journey-pause" aria-pressed="false">Pausar animación</button></div></details><a class="button small" data-launch="" href="https://app.spotra.online/">Probar SPOTRA</a><button class="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir menú">☰</button></div></header>
+<main id="contenido">
+<section class="hero" aria-labelledby="hero-title"><img class="hero-image" src="/assets/bowl.webp" alt="Skater en el aire sobre un bowl durante una sesión nocturna" width="1448" height="1086" loading="lazy" fetchpriority="low"><div class="hero-shade"></div><span class="hero-spotri-anchor spotri-dock" aria-hidden="true"></span><div class="hero-content"><div class="eyebrow"><span class="tiny-mark">S.</span> LA CALLE NOS CONECTA / LATINOAMÉRICA</div><h1 id="hero-title">TU PRÓXIMA <br>SESIÓN <br><span>EMPIEZA AQUÍ.</span></h1><div class="hero-bottom"><p>Encuentra tu spot. Arma la sesión. <br>Conecta con quienes ruedan como tú.</p><div class="hero-buttons"><a class="button" data-launch="" href="https://app.spotra.online/">Probar SPOTRA</a><a class="text-link" href="#app">Conoce la app</a></div></div></div><div class="hero-note"><span>SKATE / BMX / ROLLERS / SCOOTER</span><span>HECHO POR LA COMUNIDAD, PARA LA COMUNIDAD.</span></div><div class="ticker" aria-label="Mapa, sesiones, eventos, market, foro, SPOTRA ID"><div class="ticker-track" aria-hidden="true"><div class="ticker-group"><span>SPOTS</span><i>✳︎</i><span>SESIONES</span><i>✳︎</i><span>EVENTOS</span><i>✳︎</i><span>MARKET</span><i>✳︎</i><span>FORO</span><i>✳︎</i><span>SPOTRA ID</span><i>✳︎</i></div><div class="ticker-group"><span>SPOTS</span><i>✳︎</i><span>SESIONES</span><i>✳︎</i><span>EVENTOS</span><i>✳︎</i><span>MARKET</span><i>✳︎</i><span>FORO</span><i>✳︎</i><span>SPOTRA ID</span><i>✳︎</i></div></div></div></section>
+<section class="product-story" id="app" aria-labelledby="product-title">
+<article class="product-scene scene-map" id="app-map" aria-labelledby="map-title">
+<div class="product-heading wrap"><h2 id="product-title" class="eyebrow">01 / SPOTRA POR DENTRO</h2><nav class="product-nav" aria-label="Conoce las pantallas de SPOTRA"><a href="#app-map">Mapa</a><a href="#app-community">Foro</a><a href="#app-profile">Perfil</a></nav><div class="motion-control"><button type="button" id="story-pause" aria-pressed="false">Pausar animación</button></div></div>
+<img class="scene-texture park-texture" src="/assets/map-plaza.webp" alt="" aria-hidden="true" loading="lazy" width="1280" height="853">
+<div class="scene-inner wrap"><figure class="product-device"><a href="/assets/screen-map.jpg" target="_blank" rel="noopener" aria-label="Ampliar captura real del mapa de SPOTRA"><div class="device-frame device-dark"><div class="device-screen"><div class="device-status" aria-hidden="true"><span>9:41</span><span class="device-island"></span><span class="device-indicators"><i></i><b></b></span></div><div class="device-capture"><img src="/assets/screen-map.jpg" alt="Mapa real de SPOTRA con spots, skateparks, filtros y navegación inferior" width="1320" height="2356" loading="lazy"></div><div class="device-home" aria-hidden="true"><span></span></div></div></div></a><figcaption><span>MAPA DE SPOTS</span><span>01 / 03</span></figcaption></figure><div class="product-copy spotri-presenter"><div class="presenter-character"><span class="spotri-dock presenter-dock" aria-hidden="true"></span><span class="presenter-signature">SPOTRI</span></div><div class="presenter-message"><p class="eyebrow">MAPA COLABORATIVO</p><h3 id="map-title">Mapa de spots</h3><p class="scene-description">Te muestro el mapa. Encuentra spots, skateparks y tiendas, mira sus fotos y descubre cómo llegar. Comparte ese lugar que solo tu crew conoce.</p><div class="presenter-actions"><button class="scene-link" data-present-next="app-community">Ahora, tu comunidad</button><button class="replay-scene" data-replay="" aria-label="Animar a SPOTRI"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+<path d="M3 3v5h5"></path>
+</svg></button></div></div></div></div>
+</article>
+<article class="product-scene scene-community" id="app-community" aria-labelledby="forum-title">
+<img class="scene-texture rider-texture" src="/assets/forum-diy.webp" alt="" aria-hidden="true" loading="lazy" width="1280" height="853">
+<div class="scene-inner wrap"><figure class="product-device"><a href="/assets/screen-forum.jpg" target="_blank" rel="noopener" aria-label="Ampliar captura real del foro de SPOTRA"><div class="device-frame device-light"><div class="device-screen"><div class="device-status" aria-hidden="true"><span>9:41</span><span class="device-island"></span><span class="device-indicators"><i></i><b></b></span></div><div class="device-capture"><img src="/assets/screen-forum.jpg" alt="Foro real de SPOTRA con una publicación de bienvenida y su navegación inferior" width="1320" height="2355" loading="lazy"></div><div class="device-home" aria-hidden="true"><span></span></div></div></div></a><figcaption><span>FORO Y COMUNIDAD</span><span>02 / 03</span></figcaption></figure><div class="product-copy spotri-presenter"><div class="presenter-character"><span class="spotri-dock presenter-dock" aria-hidden="true"></span><span class="presenter-signature">SPOTRI</span></div><div class="presenter-message"><p class="eyebrow">CLIPS / FOTOS / TU CREW</p><h3 id="forum-title">Foro y comunidad</h3><p class="scene-description">Ese truco que costó cien intentos merece compartirse. Publica clips y fotos, sigue a otros riders y descubre qué está pasando en tu ciudad.</p><div class="presenter-actions"><button class="scene-link" data-present-next="app-profile">Conoce tu perfil</button><button class="replay-scene" data-replay="" aria-label="Animar a SPOTRI"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+<path d="M3 3v5h5"></path>
+</svg></button></div></div></div></div>
+</article>
+<article class="product-scene scene-profile" id="app-profile" aria-labelledby="profile-title">
+<div class="scene-inner wrap"><figure class="product-device"><a href="/assets/screen-profile-showcase.webp" target="_blank" rel="noopener" aria-label="Ampliar el mockup del perfil de Santiago"><div class="device-frame device-dark"><div class="device-screen"><div class="device-status" aria-hidden="true"><span>9:41</span><span class="device-island"></span><span class="device-indicators"><i></i><b></b></span></div><div class="device-capture"><img src="/assets/screen-profile-showcase.webp" alt="Perfil ilustrativo de Santiago en SPOTRA con 3489 seguidores, 1340 seguidos y seis publicaciones" width="934" height="1684" loading="lazy"></div><div class="device-home" aria-hidden="true"><span></span></div></div></div></a><figcaption><span>PERFIL RIDER</span><span>03 / 03</span></figcaption></figure><div class="product-copy spotri-presenter"><div class="presenter-character"><span class="spotri-dock presenter-dock" aria-hidden="true"></span><span class="presenter-signature">SPOTRI</span></div><div class="presenter-message"><p class="eyebrow">TU DISCIPLINA / TU HISTORIA</p><h3 id="profile-title">Tu perfil rider</h3><p class="scene-description">Tu disciplina, tus redes y tus publicaciones, en un mismo lugar. Muestra tu forma de rodar y conecta con quienes comparten tu pasión.</p><div class="presenter-actions"><button class="scene-link" data-present-next="spots">Salgamos a rodar</button><button class="replay-scene" data-replay="" aria-label="Animar a SPOTRI"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+<path d="M3 3v5h5"></path>
+</svg></button></div></div></div></div>
+</article>
+</section>
+<section class="spot-section" id="spots"><div class="spot-inner wrap"><div class="spot-copy"><p class="eyebrow">02 / SPOTS Y SESIONES</p><h2>LA CIUDAD <br>ES TU <br><span>SPOT.</span></h2><p>No te quedes siempre en el mismo lugar. Explora spots, skateparks y tiendas en el mapa colaborativo. Comparte lo que descubriste y arma una sesión con otros riders.</p><ul class="feature-lines"><li>Fotos, información y cómo llegar</li><li>Sesiones y avisos para salir a rodar</li><li>Presencia de riders y estado del spot</li></ul><button class="button dark" data-show="map">Explora el mapa</button></div><div class="spot-photo"><img src="/assets/bmx.webp" alt="Rider de BMX haciendo un truco sobre un pasamanos" width="1448" height="1086" loading="lazy"><div class="photo-top"><span>UN NUEVO LUGAR. <br>UNA NUEVA LÍNEA.</span><span>SP / 02</span></div><div class="photo-tags"><span>SPOTS</span><span>SKATEPARKS</span><span>TIENDAS</span></div></div></div></section>
+<section class="events-section wrap" id="eventos"><div class="event-image"><img src="/assets/event-jam.webp" alt="Encuentro de BMX y skate en una plaza al atardecer" width="1280" height="853" loading="lazy"><span class="image-stamp">NOS VEMOS <br>EN EL PARK.</span></div><div class="event-copy"><p class="eyebrow">03 / EVENTOS Y COMPETENCIAS</p><h2>DALE LUGAR <br>A TU <br><span class="green">PROGRESO.</span></h2><p>De una juntada a una competencia. Encuentra eventos por disciplina, fecha y cercanía. Inscríbete, sigue tus eventos y consulta el ranking.</p><div class="event-words"><span>JUNTADAS</span><span>COMPETENCIAS</span><span>RANKING</span></div><a class="button" data-launch="" href="https://app.spotra.online/">Probar SPOTRA</a></div></section>
+<section class="community-section wrap" id="comunidad"><div class="section-title"><div><p class="eyebrow">04 / LA ESCENA LA HACEMOS ENTRE TODOS</p><h2>TU CREW. <br><span class="green">TU COMUNIDAD.</span></h2></div><p>Lo que pasa entre una sesión y la siguiente también es parte de rodar.</p></div><div class="editorial-grid"><article class="editorial-item"><div class="item-heading"><span class="eyebrow">01 / FORO</span><span aria-hidden="true">✳︎</span></div><h3>Ese truco merece <br>ser compartido.</h3><p>Publica tus clips y fotos, comparte lo que te salió y conecta con otros riders. Sigue perfiles, participa en el foro y entérate de lo que pasa en tu escena.</p><button class="underlined-button" data-show="community">Explora el foro</button></article><article class="editorial-item"><div class="item-heading"><span class="eyebrow">02 / MARKET</span><span aria-hidden="true">✳︎</span></div><h3>Otro rider. <br>Tu próximo setup.</h3><p>Compra y vende usados entre riders. Tablas, bicis, ruedas, protecciones y lo que necesitas para seguir andando, junto a las propuestas de las tiendas.</p><div class="market-labels"><span>SKATE</span><span>BMX</span><span>ROLLERS</span><span>EQUIPAMIENTO</span></div></article></div><div class="mobile-scene-art" data-variant="crew" aria-hidden="true"></div></section>
+<section class="identity-section wrap" id="identidad"><div class="identity-copy"><p class="eyebrow">05 / PERFIL Y SPOTRA ID</p><h2>TU MANERA <br>DE RODAR. <br><span class="green">TU IDENTIDAD.</span></h2><p>Tu perfil reúne tu disciplina, tu lugar y tu contenido. Construye tu recorrido, conecta tus redes y preséntate a la comunidad y a las marcas desde tu SPOTRA ID.</p><button class="underlined-button" data-show="profile">Conoce el perfil rider</button></div><div class="identity-visual"><div class="id-card"><div class="id-card-top"><img src="/assets/logo.webp" srcset="/assets/logo-320.webp 320w, /assets/logo-small.webp 635w, /assets/logo.webp 1270w" sizes="(max-width:700px) 110px, 170px" alt="SPOTRA" width="118" height="36"><span>IDENTIDAD RIDER</span></div><div class="id-card-title">TU NOMBRE. <br>TU HISTORIA.</div><div class="id-card-line"></div><div class="id-card-footer"><span>DISCIPLINA / CIUDAD / CREW</span><b>SPOTRA ID</b></div></div><p>Un perfil que conecta lo que haces <br>con quienes comparten tu pasión.</p></div></section>
+<section class="faq-section wrap" id="preguntas"><div><p class="eyebrow">06 / ANTES DE SALIR</p><h2>¿DUDAS? <br><span class="green">HABLEMOS.</span></h2><a class="text-link" href="https://www.instagram.com/spotra.ok" target="_blank" rel="noopener">Encuéntranos en @spotra.ok</a></div><div class="faq-list"><details><summary>¿SPOTRA es solo para skaters?</summary><p>SPOTRA reúne a riders de skate, BMX, rollers y scooter. Encuentra lugares, eventos y comunidad para tu disciplina.</p></details><details><summary>¿Qué puedo encontrar en el mapa?</summary><p>Spots, skateparks y tiendas. Consulta fotos, información y cómo llegar, comparte lugares y descubre sesiones de la comunidad.</p></details><details><summary>¿Puedo organizar una sesión o un evento?</summary><p>La app permite crear sesiones y eventos para reunirte con otros riders. Los eventos cuentan con inscripciones y una sección de ranking.</p></details><details><summary>¿Qué es mi SPOTRA ID?</summary><p>Es tu identidad rider dentro de SPOTRA. Tu perfil, disciplina, ciudad, redes y contenido te ayudan a conectar con la comunidad y las marcas.</p></details><details><summary>¿Cómo controlo mi privacidad?</summary><p>SPOTRA tiene controles de privacidad, presencia en el mapa, avisos de sesiones y herramientas para reportar o bloquear usuarios. Revisa tus preferencias desde tu perfil.</p></details></div></section>
+<section class="final-cta"><div class="wrap"><p class="eyebrow">SPOTRA / LATINOAMÉRICA RUEDA AQUÍ</p><h2>AFUERA HAY <br><span>UNA SESIÓN <br>ESPERÁNDOTE.</span></h2><a class="button dark" data-launch="" href="https://app.spotra.online/">Probar SPOTRA</a><span class="cta-disciplines">SKATE / BMX / ROLLERS / SCOOTER</span></div><div class="mobile-scene-art" data-variant="park" aria-hidden="true"></div></section>
+</main>
+<footer class="footer wrap"><div class="footer-main"><div><a href="#" class="brand" aria-label="Volver al inicio"><img src="/assets/logo.webp" srcset="/assets/logo-320.webp 320w, /assets/logo-small.webp 635w, /assets/logo.webp 1270w" sizes="(max-width:700px) 110px, 170px" alt="SPOTRA" width="148" height="45"></a><p>Hecho por la comunidad, para la comunidad. <br>Desde Latinoamérica.</p></div><div><h3>EXPLORA</h3><a href="#app">La app por dentro</a><a href="#spots">Spots y sesiones</a><a href="#eventos">Eventos y ranking</a><a href="#comunidad">Foro y market</a></div><div><h3>CONECTA</h3><a href="https://www.instagram.com/spotra.ok" target="_blank" rel="noopener">Instagram / @spotra.ok</a><a href="mailto:spotra.2026@gmail.com">spotra.2026@gmail.com</a><a href="#app-map" data-spotri-start="">Descubre SPOTRA con SPOTRI</a><a href="#preguntas">Preguntas frecuentes</a></div></div><div class="footer-bottom"><span>© 2026 SPOTRA</span><div><a href="https://app.spotra.online/privacidad.html" target="_blank" rel="noopener">Privacidad</a><a href="https://app.spotra.online/terminos.html" target="_blank" rel="noopener">Términos</a></div><a class="back-to-top" href="#"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="m5 12 7-7 7 7"></path>
+<path d="M12 19V5"></path>
+</svg><span class="back-to-top-label">Volver al inicio</span></a><span>ENCUENTRA. CONECTA. RUEDA.</span></div><div class="mobile-scene-art" data-variant="street" aria-hidden="true"></div></footer>
+</div>
+<div class="spotri-guide" id="spotri-guide" data-state="welcome" data-greeting="true"><div class="guide-character" id="guide-character"><img class="guide-greeting" id="guide-greeting" src="/assets/spotri-welcome.webp" srcset="/assets/spotri-welcome-small.webp 540w, /assets/spotri-welcome.webp 1086w" sizes="(max-width:700px) 45vw, (max-height:650px) 320px, 460px" width="1536" height="2048" alt="" aria-hidden="true" fetchpriority="high"><span class="ride-sprite guide-sprite" id="guide-sprite" data-vehicle="skate" aria-hidden="true"></span></div><picture><source media="(max-width:700px)" data-srcset="/assets/spotri-closeup-mobile.webp"><img class="guide-detail" id="guide-detail" data-src="/assets/spotri-closeup-4k.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="3840" height="5120" alt="" aria-hidden="true" decoding="async" fetchpriority="low"></picture><span class="guide-speech" id="guide-speech" role="status" aria-live="polite">Hola, soy Spotri</span></div>
+<script src="/site.js?v=24fc08647a9b"></script>
 </body>
 </html>

@@ -26,7 +26,7 @@
  .welcome-character{height:100%;min-height:0;max-height:240px;margin:0;align-self:center}
  .welcome-tag{font-size:8px;padding:3px 8px}
  .welcome-copy>.eyebrow{font-size:9px;margin:4px 0}
- .welcome-copy h1{font-size:30px;line-height:1.08;margin:6px 0}
+ .welcome-copy h2{font-size:30px;line-height:1.08;margin:6px 0}
  .welcome-intro{font-size:13px;line-height:1.4;margin:6px 0 10px}
  .welcome-instruction{font-size:11px;margin:10px 0 6px}
  .welcome-languages{gap:8px;padding:3px}.welcome-languages>button{min-height:64px;padding:6px;gap:2px}
@@ -39,7 +39,7 @@
  @media(max-height:560px){
   .welcome{padding:10px 16px}.welcome-brand img{width:92px}
   .welcome-copy>.eyebrow,.welcome-ride-note{display:none}
-  .welcome-copy h1{font-size:27px;margin:4px 0}.welcome-intro{font-size:12px;line-height:1.4;margin:4px 0}
+  .welcome-copy h2{font-size:27px;margin:4px 0}.welcome-intro{font-size:12px;line-height:1.4;margin:4px 0}
   .welcome-instruction{margin:6px 0 4px}.welcome-languages>button{min-height:52px;padding:4px}
   .welcome-rides{margin:8px 0 4px}.welcome-rides legend{margin-bottom:4px}.ride-option{min-height:58px;padding:3px 2px 4px}.gear-preview{width:46px;height:34px}
   .welcome-enter{min-height:48px;padding-block:10px}.welcome-bottom{margin-top:4px}
@@ -166,7 +166,7 @@
  .welcome-brand{min-height:44px;padding-right:130px}.welcome-brand img{width:108px}.welcome-brand>span{font-size:8px;max-width:260px}
  .welcome-stage{grid-template-columns:.65fr 1fr;grid-template-rows:minmax(0,1fr);gap:20px;align-items:center;margin:4px auto 0}
  .welcome-character{height:100%;max-height:none}.welcome-bottom{position:absolute;top:10px;right:20px;margin:0}.welcome-bottom>span{display:none}
- .welcome-copy>.eyebrow,.welcome-ride-note{display:none}.welcome-copy h1{font-size:23px;margin:3px 0}
+ .welcome-copy>.eyebrow,.welcome-ride-note{display:none}.welcome-copy h2{font-size:23px;margin:3px 0}
  .welcome-intro{font-size:11px;line-height:1.3;margin:3px 0}.welcome-instruction{font-size:10px;margin:4px 0 3px}
  .welcome-languages{padding:2px;gap:6px}.welcome-languages>button{min-height:44px;padding:3px;gap:0}.welcome-languages>button>span:first-child{font-size:12px}.welcome-languages>button>span:nth-child(2){font-size:10px}.welcome-languages small{font-size:8px}
  .welcome-rides{margin:5px 0 4px}.welcome-rides legend{font-size:10px;margin-bottom:3px}.ride-option{min-height:58px;padding:3px 2px 4px;font-size:10px}.gear-preview{width:48px;height:36px}

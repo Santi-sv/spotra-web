@@ -1,3 +1,20 @@
+# SPOTRA — web oficial (spotra.online)
+
+> **13/10/2026 · Buscadores, idiomas, velocidad y seguridad.**
+> - **Google ve la web completa.** `dist/boot.js` detecta a los buscadores (Google, Bing, etc.): para ellos no aparece la pantalla de bienvenida ni el recorrido animado y `site.js` no corre (el contenido es el mismo que ven las personas). Las personas siguen viendo todo igual.
+> - **Una dirección por idioma:** `/` (español), `/pt/` (português), `/en/` (english), cada una con su título, descripción, canónica, `hreflang`, Open Graph y datos estructurados (Organization, WebSite, WebPage, WebApplication y FAQPage). Al cambiar de idioma en la página, la dirección acompaña (sin recargar).
+> - **Fuentes propias** en `dist/assets/fonts/` (antes venían de Fontshare y Google Fonts y frenaban la carga). Clash Display y General Sans: ITF Free Font License; Archivo Black y Caveat: SIL Open Font License.
+> - **Sin scripts en línea:** todo JavaScript sale de archivos propios (`boot.js`, `site.js`), así la política de seguridad (CSP) puede ser estricta. Si se agrega un `<script>` en línea o algo de otro sitio (fuentes, analíticas, videos), **hay que actualizar la CSP en Render** o se va a bloquear.
+> - Favicon real (`favicon.ico`, `favicon-96.png`, `apple-touch-icon.png`), página `404.html`, logo liviano (`logo-320.webp`), un solo título principal (H1).
+>
+> **Cómo regenerar (lo hace Claude):** después de cambiar textos o estilos, desde `SPOTRA-web`:
+> ```sh
+> python3 scripts/build-static-bundles.py && python3 scripts/build-seo.py
+> ```
+> `build-seo.py` usa `dist/index.html` como plantilla y los textos de `dist/i18n.js` (los títulos y descripciones de Google son `meta.title` y `meta.description`), y escribe `dist/index.html`, `dist/pt/index.html`, `dist/en/index.html` y `dist/sitemap.xml`. **Nunca editar a mano `dist/pt/` ni `dist/en/`**: se pisan en la próxima generación. Necesita Node y BeautifulSoup 4.
+>
+> **Headers en Render** (Static Site `spotra-web` › Settings › Headers): HSTS, CSP, X-Frame-Options, Referrer-Policy, Permissions-Policy, Cross-Origin-Opener-Policy y caché de `/assets/*`, `/site.css` y `/site.js`. Valores exactos en `RENDER-HEADERS.md`.
+
 # SPOTRA — paquete limpio de publicación
 
 > **Ajustado el 9/10/2026 para publicar en `https://spotra.online`:** dominio definitivo en canónica, Open Graph, robots y sitemap; los 4 «Probar SPOTRA» van a `https://app.spotra.online/`; Privacidad y Términos apuntan a la app (y `privacidad.html` / `terminos.html` de la web redirigen ahí); enlaces viejos (`?listing=`, `?place=`, `?event=`, `?post=`, mails) e íconos instalados desde `spotra.online` pasan directo a la app; sección Marcas quitada (FAQ renumerada a 06); fondo de bienvenida en WebP (2,4 MB → 0,2 MB). Hosting: Render Static Site con el contenido de `dist/`.
