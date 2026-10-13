@@ -1,0 +1,58 @@
+/* The same charcoal griptape and readable label on every screen size. */
+.welcome-enter{background-image:url('assets/ride-deck-charcoal.webp');background-size:contain;color:#fff;text-shadow:0 1px 2px #000}
+
+/* Inverse of the mobile-story breakpoint, including short phone landscape. */
+@media(min-width:1001px),(min-width:701px) and (min-height:501px){
+ /* Keep the photography visible; reserve the shade for the reading side. */
+ .scene-map .scene-texture,.scene-community .scene-texture{opacity:1}
+ .scene-map::after{background:linear-gradient(90deg,#07090708 0%,#07090730 34%,#070907e6 56%,#070907f5 100%)}
+ .scene-community::after{background:linear-gradient(90deg,#070907f5 0%,#070907e6 40%,#07090735 64%,#0709070a 100%)}
+ .scene-map .product-copy,.scene-community .product-copy{text-shadow:0 1px 8px #0009}
+ .scene-map .product-device figcaption,.scene-community .product-device figcaption{padding:8px 10px;background:#070907cc;border-radius:4px;color:#e8ece3}
+ .scene-profile{background:radial-gradient(ellipse at 25% 50%,#d4dfc7,transparent 60%),#eceee6;color:#172017}
+ .scene-profile .scene-description{color:#435040}
+ .scene-profile .presenter-signature,.scene-profile .product-copy .eyebrow,.scene-profile .scene-link span{color:#2e631a}
+ .scene-profile .scene-link{border-color:#72816c;color:#172017}
+ .scene-profile .scene-link:hover{color:#2e631a}
+ .scene-profile .replay-scene{background:#dce6d3;border-color:#72816c;color:#2e631a}
+ .scene-profile .product-device figcaption{color:#435040}
+ .scene-profile .product-device figcaption span:last-child{color:#2e631a}
+
+ /* Photography sits alongside both editorial stories, with no text overlay. */
+ .community-section{display:grid;grid-template-columns:.95fr 2fr;gap:28px 36px;align-content:center}
+ .community-section .section-title{grid-column:1/-1}
+ .community-section .editorial-grid{grid-column:2;grid-row:2;margin:0;gap:30px;align-self:center}
+ .community-section .editorial-item h3{font-size:clamp(24px,2.15vw,34px)}
+ .community-section .editorial-item p{font-size:15px}
+ .community-section .mobile-scene-art{display:block;grid-column:1;grid-row:2;align-self:stretch;min-height:clamp(300px,48dvh,480px);border-radius:12px;background:url('assets/community-session.webp') 43% center/cover no-repeat}
+
+ /* A bright presentation surface makes the rider identity tangible. */
+ .identity-visual{background:radial-gradient(ellipse at top right,#c5efaa,transparent 70%),#e6eadf;border:1px solid #d5dfcc;border-radius:14px;padding:clamp(30px,4vw,54px) 26px}
+ .identity-visual>p{color:#435040}
+ .id-card{box-shadow:0 20px 35px #17251240}
+
+ .brands-section{background:#182218}
+ .brand-types{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;border:0;padding:0;margin-top:36px}
+ .brand-types>span{display:flex;align-items:flex-end;min-width:0;min-height:clamp(210px,32dvh,330px);padding:20px 16px;border-radius:12px;color:#fff;font-size:clamp(14px,1.5vw,22px);line-height:1.3;background:linear-gradient(0deg,#070907ed,transparent 58%),url('assets/category-shop.webp') center/cover no-repeat}
+ .brand-types>span:nth-child(2){background-image:linear-gradient(0deg,#070907ed,transparent 58%),url('assets/category-brand.webp')}
+ .brand-types>span:nth-child(3){background-image:linear-gradient(0deg,#070907ed,transparent 58%),url('assets/category-school.webp')}
+ .brand-types>span:nth-child(4){background-image:linear-gradient(0deg,#070907ed,transparent 58%),url('assets/category-organizer.webp')}
+
+ /* An open, light chapter gives the questions space and clear contrast. */
+ .faq-section{max-width:none;padding-inline:max(clamp(24px,4.45vw,64px),calc((100% - 1192px)/2));background:#e9ede3;color:#172017}
+ .faq-section .green,.faq-list summary::after,.faq-list details a{color:#2e631a}
+ .faq-section .eyebrow,.faq-section .text-link,.faq-list details p{color:#435040}
+ .faq-list details,.faq-list details:first-child{border-color:#b1bdab}
+ .faq-list summary{font-weight:600}
+
+ .final-cta{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px;padding-inline:max(clamp(24px,4.45vw,64px),calc((100% - 1192px)/2))}
+ .final-cta>.wrap{padding:0;min-width:0}
+ .final-cta h2{font-size:clamp(34px,min(4.4vw,8dvh),64px);line-height:1.06}
+ .final-cta .cta-disciplines{display:block;margin:24px 0 0;font-size:11px}
+ .final-cta .mobile-scene-art{display:block;height:clamp(360px,70dvh,680px);border-radius:14px;background:url('assets/closing-rollers.webp') 53% center/cover no-repeat}
+
+ .footer{gap:30px}
+ .footer .mobile-scene-art{display:block;order:-1;flex:none;height:clamp(240px,40dvh,400px);border-radius:12px;background:url('assets/footer-crew.webp') center 14%/cover no-repeat}
+ .footer-main{gap:36px;padding-top:6px}
+ .footer-main a{min-height:24px}
+}

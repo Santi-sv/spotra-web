@@ -1,0 +1,211 @@
+/* Base composition. mobile-story.css supplies the mobile arrival layout. */
+.site-shell{scroll-padding-top:0;scroll-behavior:auto}
+.wrap{width:100%;max-width:1320px;padding-inline:clamp(24px,4.45vw,64px)}
+.hero{height:auto;min-height:100dvh;padding:112px clamp(24px,4.45vw,64px) calc(var(--ticker-height) + 30px);justify-content:center;gap:24px}
+.hero h1{font-size:clamp(40px,min(6.7vw,9.7dvh),94px);line-height:1;margin:26px 0}
+.hero-note{margin:0 auto;font-size:11px;gap:32px;line-height:1.5}
+.hero-note>span:last-child{max-width:360px;text-align:right}
+.hero .ticker{position:absolute;inset:auto 0 0;height:var(--ticker-height)}
+.hero-bottom{display:block}.hero-bottom p{font-size:17px}.hero-buttons{margin-top:22px}
+.hero-spotri-anchor{right:6%;top:auto;bottom:24%;width:clamp(140px,15vw,200px)}
+.product-scene{min-height:100dvh;overflow:visible;scroll-margin-top:0}
+.product-heading{position:absolute;inset:0 0 auto;z-index:2;padding-top:22px;padding-bottom:14px;gap:20px;min-height:72px}
+.product-heading h2{margin:0;font-size:12px;line-height:1.4}
+.product-nav{gap:22px}.product-nav a{min-height:44px;font-size:13px}
+.motion-control button{font-size:12px}
+.product-scene .scene-inner{min-height:100dvh;padding-block:48px;gap:clamp(32px,6vw,80px);grid-template-columns:1fr 1.05fr}
+.scene-map .scene-inner{padding-top:104px}
+.scene-community .scene-inner{grid-template-columns:1.05fr 1fr}
+.product-copy,.product-copy .presenter-message{min-width:0;max-width:520px}
+.spotri-presenter{gap:14px}.presenter-character{min-height:80px}.presenter-dock{width:60px}
+.spotri-presenter h3{font-size:clamp(34px,min(4.2vw,7dvh),60px);margin-bottom:20px;line-height:1.04}
+.spotri-presenter .scene-description{font-size:clamp(16px,1.25vw,18px);line-height:1.6}
+.presenter-actions{margin-top:24px;gap:20px}.presenter-actions .scene-link{min-height:44px;font-size:15px}
+.scene-texture{object-fit:cover;object-position:center;filter:none;opacity:.2}
+.park-texture{opacity:.42}
+.scene-map::after{background:linear-gradient(90deg,#07090722,#070907c9 58%,#070907eb),linear-gradient(0deg,#070907de,transparent 45%,#0709078c)}
+.scene-word{display:none}
+/* A complete app capture inside a modern graphite handset. */
+.product-scene .product-device{width:min(310px,calc((100dvh - 176px)*.46154));max-width:100%;margin:0;position:relative}
+.device-frame{position:relative;padding:6px;border:1px solid #7b7f7a;border-radius:44px;background:linear-gradient(110deg,#565b55,#161a17 20%,#454a44 49%,#111411 75%,#666c65);box-shadow:0 0 0 1px #000,0 0 0 3px #30342f,10px 20px 42px #0008,inset 0 0 0 1px #b7beb54a}
+.device-frame::before,.device-frame::after{content:'';position:absolute;width:3px;background:linear-gradient(#777e74,#242b23);border-radius:2px}
+.device-frame::before{left:-5px;top:100px;height:45px;box-shadow:0 58px 0 #50574c}
+.device-frame::after{right:-5px;top:140px;height:66px}
+.device-screen{aspect-ratio:9/19.5;border:4px solid #050605;border-radius:38px;overflow:hidden;display:flex;flex-direction:column;background:#090909}
+.device-status{height:44px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 17px;position:relative;font:600 10px Arial,sans-serif;color:#fff;background:#090909}
+.device-island{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:74px;height:20px;background:#000;border-radius:20px;box-shadow:inset 0 0 0 1px #1d201d}
+.device-island::after{content:'';position:absolute;width:5px;height:5px;border-radius:50%;background:#112030;right:11px;top:7px;box-shadow:0 0 0 2px #0a0d10}
+.device-indicators{display:flex;align-items:center;gap:5px}.device-indicators i{height:8px;width:11px;border-bottom:2px solid currentColor;border-right:3px solid currentColor;box-shadow:-3px 2px 0 -1px currentColor;transform:skewY(-20deg)}
+.device-indicators b{width:15px;height:7px;border:1px solid currentColor;border-radius:2px;position:relative}.device-indicators b::after{content:'';position:absolute;inset:1px 3px 1px 1px;background:currentColor}
+.device-capture{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;background:#eee}
+.device-dark .device-capture{background:linear-gradient(#090909 50%,#f6f7f5 50%)}
+.device-frame .device-capture img{width:100%;height:100%;object-fit:contain;border-radius:0}
+.device-home{height:19px;flex:none;display:grid;place-items:center;background:#f6f7f5}
+.device-home span{width:34%;height:3px;border-radius:5px;background:#101410}
+.device-light .device-status{background:#fff;color:#111}
+.product-device figcaption{margin-top:18px;line-height:1.5;font-size:11px;letter-spacing:.06em}
+.product-device a:hover .device-frame{transform:translateY(-3px);border-color:#b5c3ad}
+/* Chapters use the same vertical rhythm. Content is never clipped to force a height. */
+.spot-inner,.events-section,.identity-section,.community-section,.faq-section,.brands-section,.final-cta,.footer{min-height:100dvh;padding-block:clamp(32px,5.4dvh,58px)}
+.spot-inner,.events-section,.identity-section,.faq-section{align-items:center;gap:clamp(32px,5vw,70px)}
+.spot-copy,.event-copy,.identity-copy{min-width:0}
+.spot-copy h2,.event-copy h2,.identity-copy h2,.section-title h2,.faq-section h2{font-size:clamp(34px,min(4.5vw,7dvh),62px);margin:18px 0;line-height:1.04}
+.spot-copy h2 span{font-size:1em}
+.chapter-heading{margin-bottom:14px;gap:14px}.chapter-heading>.spotri-dock{width:52px}.chapter-heading>.eyebrow{font-size:12px}
+.spot-copy>p:not(.eyebrow),.event-copy>p:not(.eyebrow),.identity-copy>p:not(.eyebrow){font-size:16px;line-height:1.6}
+.feature-lines{margin:20px 0}.feature-lines li{padding:9px 0;font-size:13px}
+.spot-photo,.event-image{min-height:0;height:calc(100dvh - 108px);max-height:720px}
+.event-words{margin:20px 0;gap:8px;font-size:11px}
+.community-section,.brands-section,.final-cta{display:flex;flex-direction:column;justify-content:center}
+.section-title{gap:48px;grid-template-columns:1.2fr 1fr;align-items:center}.section-title>p,.section-title>div>p:not(.eyebrow){font-size:16px}
+.section-title .chapter-heading .eyebrow{margin:0}.section-title .eyebrow{margin-bottom:18px}
+.editorial-grid{margin-top:30px;gap:50px}.editorial-item{padding-top:18px}.item-heading{margin-bottom:18px}.editorial-item h3{font-size:clamp(27px,2.7vw,38px);margin-bottom:16px}.editorial-item p{font-size:16px;line-height:1.6}
+.identity-visual{padding:38px 22px}.id-card{transform:rotate(-4deg);padding:26px}.id-card-title{font-size:clamp(28px,3.2vw,46px);margin:32px 0 26px}.identity-visual>p{margin-top:30px}
+.brand-types{margin-top:44px;padding-top:26px;font-size:clamp(18px,2.1vw,28px);gap:20px}
+.faq-list summary{padding-block:20px;font-size:16px}.faq-list details p{font-size:15px}.faq-section .text-link{overflow-wrap:anywhere}
+.final-cta h2{font-size:clamp(44px,min(7.1vw,11dvh),100px);margin:25px 0 32px}
+.footer{display:flex;flex-direction:column;justify-content:center;gap:60px}.footer-main{padding:0}.footer-bottom{margin-top:0}.footer-main p{max-width:290px}
+/* Crew stickers, physical gear and a real skateboard deck replace generic controls. */
+.welcome{padding:24px clamp(24px,3vw,48px);overflow-x:hidden}
+.welcome::before{background-image:url('assets/rider-park.webp');opacity:.68}
+.welcome::after{background:linear-gradient(90deg,#07090728,#0709078c 46%,#070907ed 64%),linear-gradient(0deg,#070907a8,transparent 60%)}
+.welcome-brand>span{max-width:350px;text-align:right;font-size:11px;line-height:1.6;letter-spacing:.1em}
+.welcome-stage{max-width:1240px;grid-template-columns:1fr 1.08fr;gap:clamp(24px,4vw,64px)}
+.welcome-character{height:min(680px,76dvh);max-height:none;min-height:0}
+.welcome-tag{font-size:11px;padding:8px 16px;box-shadow:3px 3px 0 #070907}
+.welcome-copy h2{font-size:clamp(46px,5.2vw,72px);letter-spacing:-.025em;margin:14px 0;line-height:1}
+.welcome-copy>.eyebrow{font-size:12px}.welcome-intro{font-size:16px;line-height:1.5;margin:12px 0 18px}
+.welcome-instruction{margin:18px 0 10px;font-size:12px}
+.welcome-languages{gap:12px;padding:3px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.welcome-languages>button{position:relative;min-height:76px;padding:10px 12px;border:3px solid #e8ece3;border-radius:7px;background:#e8ece3;color:#182116;box-shadow:3px 4px 0 #0008;transform:rotate(-2deg);transition:transform .18s,background .18s;gap:4px}
+.welcome-languages>button:nth-child(2){transform:rotate(2deg)}.welcome-languages>button:nth-child(3){transform:rotate(-1deg)}
+.welcome-languages>button>span:first-child{display:block;width:auto;font:400 18px 'Archivo Black',Arial,sans-serif;color:inherit}
+.welcome-languages>button>span:nth-child(2){font-size:12px;flex:none}.welcome-languages small{font-size:10px;color:#596653;margin:1px 0}
+.welcome-languages>button[aria-pressed=true]{background:var(--hot);border-color:#e7ffdd;color:#101b0a;box-shadow:3px 4px 0 #274716}
+.welcome-languages>button:hover{transform:translateY(-3px) rotate(0);background:#fff;color:#101b0a}
+.welcome-languages>button[aria-pressed=true]:hover{background:var(--hot)}
+.welcome-rides{margin:20px 0 14px}.welcome-rides legend{font-size:12px;margin-bottom:10px}
+.ride-options{gap:12px;grid-template-columns:repeat(4,minmax(0,1fr))}
+.ride-option{min-height:112px;padding:6px 4px 8px;border:0;border-bottom:2px solid #596d4c;border-radius:0;background:#0b120b99;transition:background .18s;border-top:1px solid #ffffff0f;font-size:13px}
+.ride-option:has(input:checked){background:#1c341699;border-color:var(--hot);color:var(--hot)}
+.gear-preview{display:block;flex:none;width:90px;max-width:100%;height:80px;background-image:url('assets/rider-gear.webp');background-size:200% 200%;background-repeat:no-repeat}
+.gear-preview[data-vehicle=skate]{background-position:0 0}.gear-preview[data-vehicle=bmx]{background-position:100% 0}.gear-preview[data-vehicle=rollers]{background-position:0 100%}.gear-preview[data-vehicle=scooter]{background-position:100% 100%}
+.welcome-enter{display:flex;width:100%;min-height:94px;aspect-ratio:4.4;max-height:120px;padding:20px 60px;border-radius:0;border:0;background:transparent url('assets/ride-deck.webp') center/100% 100% no-repeat;color:#0c1408;font:400 18px 'Archivo Black',Arial,sans-serif;filter:drop-shadow(0 7px 3px #0005);transition:transform .2s,filter .2s}
+.welcome-enter:hover{background-color:transparent;transform:translateY(-3px) rotate(-1deg);filter:drop-shadow(0 10px 4px #0008)}
+.welcome-enter:focus-visible{outline:3px solid #fff;outline-offset:4px}.welcome-enter:disabled{cursor:wait;opacity:.7}
+.welcome-ride-note{margin-top:0;font-size:12px;color:#b2c0aa}.welcome-bottom{margin-top:14px}.welcome-bottom>span{font-size:11px}.welcome-bottom button{min-height:44px}
+.guide-greeting{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:contain;opacity:0;filter:drop-shadow(0 12px 12px #0005)}
+.spotri-guide[data-greeting=true] .guide-greeting{opacity:1}
+.spotri-guide[data-greeting=true] .guide-sprite{display:none;visibility:hidden}
+.guide-speech{display:none}
+@media(min-width:701px) and (max-height:740px){
+ .header{height:82px}.hero{padding-top:98px;gap:18px}.hero h1{margin:18px 0;font-size:clamp(34px,min(6.2vw,8.6dvh),70px)}
+ .hero-bottom p{font-size:15px}.hero-buttons{margin-top:16px}.hero .button{min-height:48px;padding:12px 22px}
+ .welcome{padding-top:18px;padding-bottom:16px}.welcome-character{height:76dvh}.welcome-copy h2{font-size:52px;margin:10px 0}
+ .welcome-intro{font-size:14px;margin:10px 0}.welcome-instruction{margin-top:12px}.welcome-languages>button{min-height:68px;padding:8px 10px}
+ .welcome-rides{margin:14px 0 8px}.ride-option{min-height:100px}.gear-preview{height:68px}.welcome-enter{min-height:82px}.welcome-bottom{margin-top:8px}
+ .chapter-heading>.spotri-dock{width:44px}.chapter-heading{margin-bottom:10px}.feature-lines{margin:16px 0}.feature-lines li{padding:7px 0}
+ .spot-inner .button,.event-copy .button{min-height:48px;padding:13px 22px}.editorial-grid{margin-top:22px}.editorial-item p{font-size:15px}
+ .spotri-presenter h3{font-size:clamp(32px,4.1vw,50px)}.presenter-character{min-height:64px}.presenter-dock{width:48px}
+}
+@media(max-width:1000px) and (min-width:701px){
+ .header .brand img{width:130px}.header{padding-inline:26px}.hero{padding-inline:32px}
+ .spotri-presenter h3{font-size:36px}.product-scene .scene-inner{gap:36px}.scene-description{font-size:16px}
+ .spot-inner,.events-section,.identity-section{gap:32px}.section-title{gap:32px}.welcome-stage{gap:24px}
+ .welcome-languages>button{padding:8px}.welcome-languages>button>span:nth-child(2){font-size:11px}.welcome-enter{font-size:16px}
+}
+@media(max-width:700px){
+ .wrap{padding-inline:22px}.header{height:72px;padding-inline:18px;gap:8px}.header .brand img{width:108px!important}.header-actions{gap:6px}.language-control select{width:52px;padding:0 5px;font-size:12px}.ride-settings>summary{padding:0 6px;font-size:9px}.menu-toggle{font-size:22px;width:44px}.header nav{top:72px}
+ .hero{min-height:100dvh;padding:108px 22px calc(var(--ticker-height) + 24px);gap:24px;justify-content:center;overflow:visible}
+ .hero-content{width:100%}.hero .eyebrow{font-size:9px;max-width:calc(100% - 70px);gap:9px}.tiny-mark{flex:none;width:24px;height:24px;font-size:16px}
+ .hero h1{font-size:clamp(28px,9.1vw,56px);margin:32px 0 24px;line-height:1.05;letter-spacing:-.015em;overflow-wrap:normal}
+ .hero-bottom p{font-size:15px}.hero-buttons{margin-top:24px;gap:16px;flex-wrap:wrap}.hero .button{font-size:14px;min-height:48px;padding:13px 20px}.hero-buttons .text-link{font-size:14px;min-height:44px}
+ .hero-note{font-size:9px;gap:22px;margin:0;line-height:1.6}.hero-note>span{flex:1}.hero-note>span:last-child{max-width:52%}
+ .hero-spotri-anchor{top:98px;right:18px;bottom:auto;width:66px}
+ .product-scene{min-height:100dvh}.product-heading{position:relative;padding:24px 22px 0;gap:12px;flex-direction:row;flex-wrap:wrap}.product-heading h2{width:100%}.product-nav{width:auto;flex:1;gap:20px}.product-nav a{font-size:12px;gap:8px}.product-story .motion-control{width:auto}.motion-control button{font-size:10px;padding:8px;min-height:44px}
+ .product-scene .scene-inner,.scene-map .scene-inner{display:flex;flex-direction:column;padding-block:34px 48px;min-height:0;gap:32px}
+ .product-copy{order:0;width:100%;text-align:left}.product-scene .product-device{order:1;width:min(272px,78vw);margin:0 auto}
+ .presenter-character{min-height:64px}.presenter-dock{width:48px}.spotri-presenter{gap:14px}.spotri-presenter h3{font-size:clamp(30px,8.5vw,42px);margin-bottom:18px;line-height:1.08}.spotri-presenter .scene-description{font-size:16px;line-height:1.65}.presenter-actions{margin-top:20px;gap:14px}.presenter-actions .scene-link{font-size:14px}
+ .device-frame{padding:5px;border-radius:41px}.device-screen{border-radius:35px}.device-status{height:40px;padding:0 15px;font-size:9px}.device-island{height:18px;width:66px;top:8px}.device-home{height:17px}.device-frame img{border-radius:0}.product-device figcaption{font-size:10px}
+ .spot-inner,.events-section,.identity-section,.community-section,.faq-section,.brands-section,.final-cta,.footer{min-height:100dvh;padding-block:42px}
+ .spot-inner,.events-section,.identity-section,.faq-section{display:flex;flex-direction:column;align-items:stretch;gap:32px}.events-section{flex-direction:column-reverse}
+ .spot-copy h2,.event-copy h2,.identity-copy h2,.section-title h2,.faq-section h2{font-size:clamp(30px,9vw,48px);margin:18px 0;line-height:1.06}
+ .spot-copy>p:not(.eyebrow),.event-copy>p:not(.eyebrow),.identity-copy>p:not(.eyebrow){font-size:16px}.spot-photo,.event-image{height:380px;max-height:none;min-height:0;flex:none}.spot-photo{height:390px}
+ .chapter-heading{gap:12px}.chapter-heading>.spotri-dock{width:44px}.chapter-heading>.eyebrow{font-size:11px}
+ .section-title{display:block}.section-title>p,.section-title>div>p:not(.eyebrow){margin-top:20px;font-size:16px}.editorial-grid{grid-template-columns:1fr;gap:34px;margin-top:30px}.editorial-item h3{font-size:30px}.editorial-item p{font-size:16px}.item-heading{margin-bottom:16px}
+ .identity-visual{padding:30px 18px}.id-card{padding:20px;transform:rotate(-3deg)}.id-card-title{font-size:clamp(26px,7.5vw,36px);margin:28px 0 22px}.id-card-top{gap:10px}.id-card-top img{width:104px}.id-card-top>span{font-size:8px}.identity-visual>p{font-size:13px;margin-top:28px}
+ .brands-section .wrap{padding-inline:22px}.brand-types{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));font-size:clamp(14px,4vw,20px);gap:18px;margin-top:34px}
+ .faq-list summary{padding-block:20px;font-size:15px}.faq-list details p{font-size:15px}.final-cta h2{font-size:clamp(28px,8.5vw,58px);line-height:1.05}.cta-disciplines{margin:24px 0 0;display:block;line-height:1.6}
+ .footer{gap:42px;justify-content:center}.footer-main{gap:30px 18px}.footer-main>div{min-width:0}.footer-bottom{gap:18px;padding-top:24px}.footer-main a{font-size:12px;overflow-wrap:anywhere}
+ .welcome{padding:18px 20px}.welcome-brand img{width:120px}.welcome-brand>span{font-size:8px;max-width:146px;letter-spacing:.07em;line-height:1.6}
+ .welcome-stage{max-width:440px;grid-template-columns:1fr;gap:0;flex:none}.welcome-character{height:208px;margin:12px 0 8px}.welcome-spotri-anchor{height:calc(100% - 24px)}.welcome-tag{padding:5px 12px;font-size:9px}
+ .welcome-copy>.eyebrow{font-size:10px;margin:10px 0}.welcome-copy h2{font-size:36px;margin:10px 0;line-height:1.08}.welcome-copy h2 br{display:none}.welcome-copy h2>span{margin-left:0}.welcome-intro{font-size:14px;margin:10px 0 14px}.welcome-instruction{font-size:11px;margin:14px 0 9px}
+ .welcome-languages{gap:9px;padding:3px}.welcome-languages>button{padding:8px 7px;min-height:76px;border-width:2px}.welcome-languages>button>span:first-child{font-size:18px}.welcome-languages>button>span:nth-child(2){font-size:10px}.welcome-languages small{font-size:8px}
+ .welcome-rides{margin:18px 0 8px}.welcome-rides legend{font-size:11px}.ride-options{gap:8px}.ride-option{min-height:91px;font-size:11px;padding:5px 2px 8px}.gear-preview{width:64px;height:64px}.welcome-enter{min-height:72px;font-size:14px;padding:16px 45px;aspect-ratio:4.4}.welcome-ride-note{font-size:10px;line-height:1.5;margin:5px 0 0}.welcome-bottom{margin-top:20px}.welcome-bottom>span{font-size:8px;max-width:140px}.welcome-bottom button{font-size:10px;padding:8px 10px}
+ .welcome::before{opacity:.5;background-position:36% top}.welcome::after{background:linear-gradient(0deg,#070907f5,#070907dd 64%,#07090765)}
+}
+@media(max-width:360px){.header{padding-inline:14px}.header .brand img{width:94px!important}.header-actions{gap:5px}.hero h1{font-size:28px}.welcome{padding-inline:16px}.welcome-character{height:174px}.welcome-copy h2{font-size:31px}.welcome-brand img{width:108px}.welcome-brand>span{max-width:132px}.ride-options{gap:5px}.gear-preview{width:58px;height:58px}.welcome-enter{min-height:67px}.product-heading{gap:8px}.product-nav{gap:14px}.motion-control button{font-size:9px}.product-scene .product-device{width:min(248px,78vw)}}
+@media(max-width:700px) and (max-height:680px){.hero{padding-top:94px;gap:18px}.hero h1{margin:26px 0 20px}.hero-buttons{margin-top:18px}.welcome-character{height:170px}.welcome-copy h2{font-size:31px}.welcome-bottom{margin-top:16px}}
+/* Keep the complete handset and caption inside the final reading viewport,
+   including when the browser toolbar reduces the available height. */
+@media(max-width:700px){
+ .product-scene .product-device{width:min(272px,78vw,calc((100svh - 116px)*.46154))}
+ .footer-main{grid-template-columns:1fr}
+ .footer-main>div:first-child{grid-column:auto}
+ .footer-main a{font-size:14px;overflow-wrap:break-word}
+}
+@media(max-width:700px) and (max-height:680px){
+ .welcome{padding:12px 16px}
+ .welcome-character{height:clamp(88px,calc(100svh - 520px),130px);margin:6px 0}
+ .welcome-tag{font-size:8px;padding:3px 8px}
+ .welcome-copy>.eyebrow{margin:5px 0;font-size:9px}
+ .welcome-copy h2{font-size:28px;margin:6px 0}
+ .welcome-intro{font-size:13px;line-height:1.4;margin:6px 0 10px}
+ .welcome-instruction{margin:10px 0 6px}
+ .welcome-languages>button{min-height:64px;padding:6px;gap:2px}
+ .welcome-languages>button>span:first-child{font-size:16px}
+ .welcome-rides{margin:12px 0 6px}
+ .welcome-rides legend{margin-bottom:6px}
+ .ride-option{min-height:76px;padding:4px 2px 6px}
+ .gear-preview{height:50px;width:58px}
+ .welcome-enter{min-height:60px;aspect-ratio:auto;padding:12px 40px}
+ .welcome-bottom{margin-top:10px}
+}
+@media(max-width:1000px) and (max-height:500px) and (orientation:landscape){
+ .welcome{padding:10px 20px}
+ .welcome-brand img{width:108px}.welcome-brand>span{font-size:8px;max-width:260px}
+ .welcome-stage{grid-template-columns:.65fr 1fr;gap:20px;flex:none;margin:4px auto 0}
+ .welcome-character{height:calc(100svh - 100px)}
+ .welcome-tag{font-size:9px;padding:5px 10px}
+ .welcome-copy>.eyebrow{font-size:9px;margin:4px 0}
+ .welcome-copy h2{font-size:28px;line-height:1.08;margin:6px 0}
+ .welcome-copy h2 br{display:none}.welcome-copy h2>span{margin-left:0}
+ .welcome-intro{font-size:12px;line-height:1.4;margin:4px 0}
+ .welcome-instruction{font-size:10px;margin:6px 0 5px}
+ .welcome-languages{gap:8px}.welcome-languages>button{min-height:54px;padding:5px;gap:1px;border-width:2px}
+ .welcome-languages>button>span:first-child{font-size:14px}
+ .welcome-languages>button>span:nth-child(2){font-size:11px}.welcome-languages small{font-size:8px}
+ .welcome-rides{margin:6px 0 6px}.welcome-rides legend{font-size:10px;margin-bottom:4px}
+ .ride-option{min-height:70px;font-size:11px;padding:4px 2px 6px}
+ .gear-preview{height:48px;width:64px}
+ .welcome-enter{min-height:52px;aspect-ratio:auto;font-size:14px;padding:12px 40px}
+ .welcome-ride-note{font-size:10px;line-height:1.4;margin:4px 0 0}
+ .welcome-bottom{margin-top:10px}.welcome-bottom>span{font-size:8px}
+}
+@media(max-width:1000px) and (max-height:380px) and (orientation:landscape){
+ .welcome-brand img{width:88px}.welcome-brand>span{font-size:7px;max-width:210px}
+ .welcome-character{height:calc(100svh - 86px);margin:0}
+ .welcome-copy>.eyebrow{font-size:8px;margin:2px 0}
+ .welcome-copy h2{font-size:23px;margin:3px 0}
+ .welcome-intro{font-size:11px;line-height:1.3;margin:3px 0}
+ .welcome-instruction{margin:4px 0 3px}
+ .welcome-languages{padding:2px;gap:6px}
+ .welcome-languages>button{min-height:44px;padding:3px;gap:0}
+ .welcome-languages>button>span:first-child{font-size:12px}
+ .welcome-languages>button>span:nth-child(2){font-size:10px}.welcome-languages small{font-size:7px}
+ .welcome-rides{margin:5px 0 4px}.welcome-rides legend{margin-bottom:3px}
+ .ride-option{min-height:58px;padding:3px 2px 4px;font-size:10px}
+ .gear-preview{height:36px;width:48px}
+ .welcome-enter{min-height:44px;font-size:12px;padding:10px 32px}
+}
+@media(prefers-reduced-motion:reduce){.welcome-enter,.welcome-languages>button,.product-device .device-frame{transition:none}.welcome-languages>button:hover{transform:none}}
